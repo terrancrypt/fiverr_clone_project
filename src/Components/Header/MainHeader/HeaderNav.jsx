@@ -36,7 +36,7 @@ const HeaderNav = () => {
         <li>
           <a href="#">Sign In</a>
         </li>
-        <a href="#" className="header__button py-2 px-4 rounded border">
+        <a href="#" className="header__button py-1.5 px-4 rounded border">
           Join
         </a>
       </ul>

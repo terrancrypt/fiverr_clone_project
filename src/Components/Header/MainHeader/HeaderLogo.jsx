@@ -4,7 +4,7 @@ const HeaderLogo = () => {
   return (
     <div className="mr-8">
       <svg
-        width="81"
+        width="89"
         height="27"
         viewBox="0 0 89 27"
         fill="none"

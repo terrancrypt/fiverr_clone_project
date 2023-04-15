@@ -5,7 +5,7 @@ const CarouselHomePage = () => {
     <div className="container py-52">
       <div className="homepage__carousel-content space-y-7">
         <h1>
-          <span>Find the perfect</span> <i>freelance</i> services for your
+          <span>Find the perfect</span> <i className="domaine__font">freelance</i> services for your
           business
         </h1>
 

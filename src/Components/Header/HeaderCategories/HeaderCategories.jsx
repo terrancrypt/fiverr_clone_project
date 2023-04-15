@@ -18,12 +18,12 @@ const HeaderCategories = () => {
 
   return (
     <div className="container">
-      <ul className="flex justify-between items-center my-1">
+      <ul className="flex justify-between items-center">
         {categories.map((item, index) => {
           return (
-            <li key={index}>
+            <li className="my-2" key={index}>
               <NavLink className="header__categories-item">{item.tenLoaiCongViec}</NavLink>
-              <div className="header__dropdown p-6 shadow">
+              <div className="header__dropdown p-6 shadow bg-white">
                 <HeaderCategoriesItem data={item.dsNhomChiTietLoai}/>
               </div>
             </li>
