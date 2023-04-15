@@ -3,7 +3,11 @@
   src: url('./assets/fonts/MacanPanWeb-Regular.ttf');
 }
 
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@font-face {
+  font-family: "MacanBold";
+  src: url('./assets/fonts/MacanPanWeb-Bold.ttf')
+}
+
 @import url('https://fonts.cdnfonts.com/css/helvetica-255');
 
 /*================ VARIABLE CSS ================*/
@@ -11,6 +15,7 @@
 
   /*============ Colors ===========*/
   --primary-color: #1dbf73;
+  --text-white: #fff;
   --text-primary-color: #74767e;
   --text-secondary-color: #404145;
   --text-bland-color: #62646a;
@@ -18,7 +23,7 @@
   --background-dark-color: #222325;
 
   /*=========== Font and typography ===========*/
-  --body-font: Macan, 'Helvetica Nue', Helvetica, Arial, sans-serif;
+  --body-font: 'Macan', Helvetica, Arial, sans-serif;
 
   --font-size-small: kích thước nhỏ cho phông chữ.;
   --font-size-medium: 1rem;
