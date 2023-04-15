@@ -16,6 +16,8 @@ const Trusted = () => {
         </ul>
       </div>
     </div>
+
+  
   );
 };
 

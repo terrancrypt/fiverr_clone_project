@@ -5,7 +5,7 @@ import Trusted from "./Trusted/Trusted";
 
 const HomePage = () => {
 
-  /*================ Scrool Header ================*/
+  /*================ Scrool Header =============k===*/
   
 
   return (

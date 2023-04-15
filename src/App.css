@@ -16,6 +16,16 @@
   src: url('./assets/fonts/MacanPanWeb-Bold.ttf')
 }
 
+@font-face {
+  font-family: "MacanSemiBold";
+  src: url('./assets/fonts/MacanPanWeb-Semibold.ttf');
+}
+
+@font-face {
+  font-family: "MacanExtraBold";
+  src: url('./assets/fonts/MacanPanWeb-Extrabold.ttf');
+}
+
 @import url('https://fonts.cdnfonts.com/css/domaine-display-narrow');
 
 @import url('https://fonts.cdnfonts.com/css/helvetica-255');
@@ -37,10 +47,14 @@
   --regular-font: 'MacanRegular', Helvetica, Arial, sans-serif;
   --medium-font: "MacanMedium", Helvetica, Arial, sans-serif;
   --bold-font: 'MacanBold', Helvetica, Arial, sans-serif;
+  --semi-bold-font: 'MacanSemiBold', Helvetica, Arial, sans-serif;
+  --extra-bold-font: "MacanExtraBold", Helvetica, Arial, sans-serif;
+
   --domaine-font: 'Domaine Display Narrow', sans-serif;
 
   --font-size-small: 14px;
   --font-size-medium: 16px;
+  --font-size-medium-2: 20px;
   --font-size-large: 48px;
 }
 
