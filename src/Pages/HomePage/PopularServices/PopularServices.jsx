@@ -22,6 +22,7 @@ const PopularServices = () => {
           slidesToShow: 4,
           slidesToScroll: 4,
           infinite: true,
+          dots: false,
         },
       },
       {
@@ -30,6 +31,7 @@ const PopularServices = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
+          dots: false,
         },
       },
       {
@@ -38,6 +40,7 @@ const PopularServices = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
+          dots: false,
         },
       },
       {
@@ -46,6 +49,7 @@ const PopularServices = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
+          dots: false,
         },
       },
     ],
@@ -53,7 +57,7 @@ const PopularServices = () => {
 
   return (
     <div className="popularservices container my-0 mx-auto px-6 sm:px-8 2xl:px-0 pb-24">
-        <h2 className="p-6">Popular professional services</h2>
+      <h2 className="p-6">Popular professional services</h2>
       <div className="relative">
         <Slider
           ref={sliderRef}
@@ -81,7 +85,7 @@ const PopularServices = () => {
               sliderRef.current.slickPrev();
             }}
           >
-            <div className="bg-white flex items-center content-center border shadow rounded-full z-50 p-3 absolute top-1/2 -left-2.5">
+            <div className="bg-white flex items-center justify-center border shadow rounded-full z-50 p-3 absolute top-36 -left-2.5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -105,7 +109,7 @@ const PopularServices = () => {
               sliderRef.current.slickNext();
             }}
           >
-            <div className="bg-white flex items-center content-center border shadow rounded-full z-50 p-3 absolute top-1/2 -right-2.5">
+            <div className="bg-white flex items-center justify-center border shadow rounded-full z-50 p-3 absolute top-36 -right-2.5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -1,6 +1,25 @@
-header {
+.header {
     border-bottom: 1px solid #e4e5e7;
 }
+
+.turn__off{
+    border: 0!important;
+}
+
+.turn__off .header__nav ul li{
+    color: white!important;
+}
+
+.turn__off .header__nav ul li svg {
+    color: white!important;
+}
+
+.turn__off .header__nav .header__button {
+    color: white!important;
+    border-color: white;
+    background-color: transparent;
+}
+
 
 /*================ MAIN HEADER ================*/
 .header__main {
@@ -75,6 +94,11 @@ header {
     border-top: 1px solid #e4e5e7;
 }
 
+.header__categories .turn__off{
+    border-top: 0;
+}
+
+
 .header__categories ul li {
     position: relative;
 }
@@ -127,3 +151,4 @@ header {
 .header__categories .header__dropdown a:hover {
     color: var(--text-bland-color);
 }
+

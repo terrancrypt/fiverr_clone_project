@@ -15,7 +15,7 @@
 
 .homepage__carousel h1 {
     font-family: "MacanBold", Arial, Helvetica, sans-serif;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-super-large);
     color: var(--text-white);
     line-height: 56px;
 }
