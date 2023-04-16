@@ -2,6 +2,7 @@ import React from "react";
 import './HomePage.css';
 import CarouselHomePage from "./Carousel/CarouselHomePage";
 import Trusted from "./Trusted/Trusted";
+import PopularServices from "./PopularServices/PopularServices";
 
 const HomePage = () => {
 
@@ -14,6 +15,7 @@ const HomePage = () => {
     <CarouselHomePage/>
     </div>
     <Trusted/>
+    <PopularServices/>
     </>
   );
 };

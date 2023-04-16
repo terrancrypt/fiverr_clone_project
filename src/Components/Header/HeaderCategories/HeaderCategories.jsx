@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { categoriesService } from "../../../services/categoriesService";
+import { jobsService } from "../../../services/jobsService";
 import HeaderCategoriesItem from "./HeaderCategoriesItem";
 
 const HeaderCategories = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    categoriesService
+    jobsService
       .getMenuCategories()
       .then((res) => {
         setCategories(res.data.content);
@@ -17,7 +17,7 @@ const HeaderCategories = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
       <ul className="flex justify-between items-center">
         {categories.map((item, index) => {
           return (

@@ -88,6 +88,19 @@
     color: #b5b6ba;
 }
 
-.homepage__trusted .trusted__content ul li img{
-    width: 70px;
+/*================ Popular Services ================*/
+.popularservices .popularservices__slider{
+    height: 345px;
+}
+
+.popularservices .popularservices__slider-card{
+    width: 268px;
+}
+
+.popularservices .popularservices__slider-card img{
+    height: 345px;
+}
+
+.slick-next:before {
+    content: '>';
 }

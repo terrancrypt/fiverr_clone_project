@@ -2,7 +2,7 @@ import React from "react";
 
 const CarouselHomePage = () => {
   return (
-    <div className="container py-52">
+    <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-52">
       <div className="homepage__carousel-content space-y-7">
         <h1>
           <span>Find the perfect</span> <i className="domaine__font">freelance</i> services for your
