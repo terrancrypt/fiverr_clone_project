@@ -17,19 +17,23 @@ const HeaderCategories = () => {
   }, []);
 
   return (
-    <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
-      <ul className="flex justify-between items-center">
-        {categories.map((item, index) => {
-          return (
-            <li className="my-2" key={index}>
-              <NavLink className="header__categories-item">{item.tenLoaiCongViec}</NavLink>
-              <div className="header__dropdown p-6 shadow bg-white">
-                <HeaderCategoriesItem data={item.dsNhomChiTietLoai}/>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+    <div className="header__categories-wrapper">
+      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
+        <ul className="flex justify-between items-center">
+          {categories.map((item, index) => {
+            return (
+              <li className="my-2" key={index}>
+                <NavLink className="header__categories-item">
+                  {item.tenLoaiCongViec}
+                </NavLink>
+                <div className="header__dropdown p-6 shadow bg-white">
+                  <HeaderCategoriesItem data={item.dsNhomChiTietLoai} />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };
