@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-:where(.css-dev-only-do-not-override-htwhyh).ant-modal .ant-modal-content {
+:where(.css-htwhyh).ant-modal .ant-modal-content {
     background-color: transparent;
     padding: 0;
 }
