@@ -90,10 +90,11 @@ textarea {
   font-weight: 500;
 }
 
-h2{
+h2 {
   font-size: var(--font-size-large);
   font-family: var(--bold-font);
   color: var(--text-secondary-color);
+  line-height: 120%;
 }
 
 h4 {
@@ -107,6 +108,12 @@ h4 small {
   font-family: var(--regular-font);
   display: block;
   line-height: 20px;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: var(--bold-font);
+  color: var(--text-secondary-color);
 }
 
 /*================ RESPONSIVE ================*/
@@ -127,6 +134,10 @@ h4 small {
 
 /*========= Tablet Devices ========= */
 @media only screen and (min-width: 600px) {
+
+  h2{
+    line-height: 120%;
+  }
 
   h4 {
     font-size: var(--font-size-medium-3);

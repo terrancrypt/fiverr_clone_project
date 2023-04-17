@@ -3,10 +3,11 @@
     background-color: white;
 }
 
-.header__main-wrapper{
+.header__main-border{
     border-bottom: 1px solid #e4e5e7;
     transition: border .5s ease;
 }
+
 
 /*================ MAIN HEADER ================*/
 .header__main-wrapper {
@@ -150,7 +151,7 @@
     background-color: transparent;
 }
 
-.turn__off .header__main .header__main-wrapper{
+.turn__off .header__main .header__main-border{
     border-bottom: none!important;
 }
 

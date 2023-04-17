@@ -67,11 +67,11 @@ const PopularServices = () => {
           {items.map((item, index) => {
             return (
               <NavLink className="popularservices__slider-card" key={index}>
-                <h4 className="absolute px-8 py-4 text-white">
+                <h4 className="absolute px-8 py-4 text-white z-20 ">
                   <small>{item.desc}</small>
                   {item.title}
                 </h4>
-                <div className="px-4 z-10 rounded">
+                <div className="px-4 z-10 rounded hover:opacity-80 transition-all duration-300 ease-in-out">
                   <img className="rounded" src={item.url} alt="slide" />
                 </div>
               </NavLink>
