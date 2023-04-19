@@ -1,0 +1,16 @@
+
+.login__separator{
+    height: 12px;
+    margin: 20px 0 32px;
+    text-align: center;
+    border-bottom: 1px solid #e4e5e7;
+}
+.login__separator .separator__text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 0 8px;
+    background-color:white;
+    color: #62646a;
+}

@@ -12,14 +12,15 @@ export default function AdminUserPage() {
   console.log(qs.parse(stringSearch));
 
 
-  useEffect(() => {
-    adminUserService
-      .getUserList()
-      .then((res) => {
-        setUsers(res.data.content);
-      })
-      .catch((err) => {});
-  });
+
+  // useEffect(() => {
+  //   adminUserService
+  //     .getUserList()
+  //     .then((res) => {
+  //       setUsers(res.data.content);
+  //     })
+  //     .catch((err) => {});
+  // });
   let handleDelete = (id) => {
     adminUserService
       .deleteUser(id)
@@ -64,7 +65,9 @@ export default function AdminUserPage() {
             ),
           };
         });
+
         setUsers(userArr);
+
       })
       .catch((err) => {});
   };
