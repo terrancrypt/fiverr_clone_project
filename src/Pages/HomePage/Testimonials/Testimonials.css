@@ -1,0 +1,30 @@
+.testimonials .testimonials__item {
+    display: flex !important;
+    align-items: center;
+}
+
+.testimonials .testimonials__item-img::after {
+    background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/desktop-play-button.bab1740.png) no-repeat;
+    background-size: 80px;
+    content: "";
+    display: inline-block;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.testimonials .testimonials__item-text h5 {
+    color: var(--text-primary-color);
+}
+
+.testimonials .testimonials__item-text blockquote {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--domaine-font);
+    font-style: italic;
+}

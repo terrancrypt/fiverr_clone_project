@@ -110,6 +110,11 @@ h4 small {
   line-height: 20px;
 }
 
+h5 {
+  font-size: 18px;
+  line-height: 140%;
+}
+
 h6 {
   font-size: 18px;
   font-family: var(--bold-font);
@@ -135,8 +140,12 @@ h6 {
 /*========= Tablet Devices ========= */
 @media only screen and (min-width: 600px) {
 
-  h2{
+  h2 {
     line-height: 120%;
+  }
+  
+  h5{
+    font-size: 20px;
   }
 
   h4 {

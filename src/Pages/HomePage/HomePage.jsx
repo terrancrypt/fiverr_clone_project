@@ -6,6 +6,7 @@ import PopularServices from "./PopularServices/PopularServices";
 import Outstanding from "./Outstanding/Outstanding";
 import Explore from "./Explore/Explore";
 import Business from "./Business/Business";
+import Testimonials from "./Testimonials/Testimonials";
 
 const HomePage = () => {
   useEffect(() => {
@@ -58,6 +59,7 @@ const HomePage = () => {
       <Outstanding/>
       <Explore/>
       <Business/>
+      <Testimonials/>
     </>
   );
 };
