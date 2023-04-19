@@ -1,0 +1,56 @@
+.business {
+    background-color: #0d084d;
+}
+
+.business .business__content .business__item {
+    padding-right: 5%;
+    max-width: 46.66667%
+}
+
+.business .business__content .business__item-logo span {
+    background-color: rgb(88, 74, 255);
+    font-size: 10px;
+}
+
+.business .business__content .business__item-title span {
+    font-family: var(--domaine-font);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.business .business__content .business__item-desc {
+    font-size: 18px;
+}
+
+.business .business__content .business__item-list li {
+    display: flex;
+    color: white;
+    padding-bottom: 12px;
+}
+
+.business .business__content .business__item-list li svg {
+    margin-right: 10px;
+}
+
+.business .business__content .business__item-button {
+    width: fit-content;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: 70ms cubic-bezier(.75, 0, .25, 1);
+    background-color: var(--primary-color);
+}
+
+
+
+/*================ Business Image ================*/
+.business .business__content .business__image {
+    max-width: 53.33333%;
+}
