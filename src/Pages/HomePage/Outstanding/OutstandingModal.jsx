@@ -3,8 +3,8 @@ import { Modal } from "antd";
 
 const OutstandingModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const refVideo = useRef();
-  console.log(refVideo);
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -12,6 +12,7 @@ const OutstandingModal = () => {
     setIsModalOpen(false);
     refVideo.current.pause();
   };
+
   return (
     <div className="w-full">
       <div className="outstanding__video-wrapper relative" onClick={showModal}>

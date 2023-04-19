@@ -4,6 +4,7 @@ import CarouselHomePage from "./Carousel/CarouselHomePage";
 import Trusted from "./Trusted/Trusted";
 import PopularServices from "./PopularServices/PopularServices";
 import Outstanding from "./Outstanding/Outstanding";
+import Explore from "./Explore/Explore";
 
 const HomePage = () => {
   useEffect(() => {
@@ -54,6 +55,7 @@ const HomePage = () => {
       <Trusted />
       <PopularServices />
       <Outstanding/>
+      <Explore/>
     </>
   );
 };
