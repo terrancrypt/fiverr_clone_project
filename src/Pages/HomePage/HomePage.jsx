@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials/Testimonials";
 import Ads from "./Ads/Ads";
 import Projects from "./Projects/Projects";
 import Guides from "./Guides/Guides";
+import CallToAction from "./CallToAction/CallToAction";
 
 const HomePage = () => {
   useEffect(() => {
@@ -53,7 +54,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="homepage__carousel flex items-center justify-start">
         <CarouselHomePage />
       </div>
@@ -66,7 +67,8 @@ const HomePage = () => {
       <Ads/>
       <Projects/>
       <Guides/>
-    </>
+      <CallToAction/>
+    </div>
   );
 };
 
