@@ -1,0 +1,7 @@
+.guides .guides__content .guides__item .guides__item-title{
+    padding-bottom: 2px;
+}
+
+.guides .guides__content .guides__item .guides__item-desc{
+    color: var(--text-primary-color);
+}
