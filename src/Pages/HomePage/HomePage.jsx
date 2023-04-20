@@ -8,6 +8,7 @@ import Explore from "./Explore/Explore";
 import Business from "./Business/Business";
 import Testimonials from "./Testimonials/Testimonials";
 import Ads from "./Ads/Ads";
+import Projects from "./Projects/Projects";
 
 const HomePage = () => {
   useEffect(() => {
@@ -62,6 +63,7 @@ const HomePage = () => {
       <Business/>
       <Testimonials/>
       <Ads/>
+      <Projects/>
     </>
   );
 };

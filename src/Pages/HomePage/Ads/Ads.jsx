@@ -3,8 +3,8 @@ import "./Ads.css";
 import { NavLink } from "react-router-dom";
 const Ads = () => {
   return (
-    <div className="homepage__ads container my-0 mx-auto px-6 sm:px-8 2xl:px-0 relative">
-      <div className="homepage__ads-banner flex flex-start">
+    <div className="homepage__ads container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24">
+      <div className="homepage__ads-banner flex flex-start relative">
         <div className="homepage__ads-text pl-20 py-9 z-20">
           <div className="homepage__ads-logo pb-4">
             <svg
