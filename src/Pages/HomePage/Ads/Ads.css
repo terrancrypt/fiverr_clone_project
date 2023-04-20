@@ -1,0 +1,24 @@
+.homepage__ads .homepage__ads-text .homepage__ads-button{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 12px 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: 70ms cubic-bezier(.75,0,.25,1);
+    color: #446ee7;
+}
+
+.homepage__ads .homepage__ads-text .homepage__ads-button:hover{
+    background-color: #d4defb;
+}
+
+.homepage__ads .homepage__ads-banner{
+ background-color: #446ee7;
+}
