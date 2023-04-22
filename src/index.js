@@ -6,13 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import "./assets/fonts/MacanPanWeb-Regular.ttf";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import userLogin from "./toolkit/userLogin";
+import userSlice from "./toolkit/userSlice";
+import "antd/dist/antd";
+
 
 
 
 const store= configureStore({
     reducer:{
-        userLogin
+       userSlice
       
     }
   }) ;
