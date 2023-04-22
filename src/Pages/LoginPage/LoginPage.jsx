@@ -6,6 +6,7 @@ import { message } from "antd";
 import { localUserService } from "../../services/loginServices/localService";
 import { setUserLogin } from "../../toolkit/userLogin";
 import { useNavigate } from "react-router-dom";
+import LoginPageImg from "./LoginPageImg";
 const LoginPage = () => {
   // let dispatch = useDispatch();
   // let navigate = useNavigate();
@@ -32,7 +33,6 @@ const LoginPage = () => {
             <div className=" p-6 space-y-4 md:space-y-6 sm:p-8">
               <LoginPageImg />
               <form className="space-y-4 md:space-y-6">
-<<<<<<< tuongBranch
                 <p className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Sign In to Fiverr
                 </p>
@@ -115,8 +115,6 @@ const LoginPage = () => {
                 <div className="login__separator">
                   <span className="separator__text">OR</span>
                 </div>
-=======
->>>>>>> local
                 <div className="mb-6">
                   <input
                     type="text"
