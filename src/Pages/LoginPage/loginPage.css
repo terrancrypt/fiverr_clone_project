@@ -14,3 +14,6 @@
     background-color:white;
     color: #62646a;
 }
+:where(.css-htwhy).ant-input {
+    border-radius: 6px!important;
+}

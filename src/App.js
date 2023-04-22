@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { mainRoutes } from "./routes/mainRoutes";
 import { adminRoutes } from "./routes/adminRoutes";
+import 'antd/dist/reset.css';
 
 
 function App() {
