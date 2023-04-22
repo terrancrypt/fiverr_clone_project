@@ -1,0 +1,34 @@
+.outstanding{
+    background-color: #f1fdf7;
+}
+
+.outstanding .outstanding__content .outstanding__text{
+    width: 46.66667%;
+    padding-right: 11%;
+}
+
+.outstanding .outstanding__content .outstanding__text p{
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--text-bland-color);
+}
+
+.outstanding .outstanding__content .outstanding__video-wrapper::after{
+    background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/desktop-play-button.bab1740.png) no-repeat;
+    background-size: 80px;
+    content: "";
+    display: inline-block;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+:where(.css-htwhyh).ant-modal .ant-modal-content {
+    background-color: transparent;
+    padding: 0;
+}

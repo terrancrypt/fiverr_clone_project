@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderLogo = () => {
   return (
-    <div className="mr-8">
+    <div className="header__logo mr-8">
       <svg
         width="89"
         height="27"

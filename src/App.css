@@ -49,13 +49,14 @@
   --bold-font: 'MacanBold', Helvetica, Arial, sans-serif;
   --semi-bold-font: 'MacanSemiBold', Helvetica, Arial, sans-serif;
   --extra-bold-font: "MacanExtraBold", Helvetica, Arial, sans-serif;
-
   --domaine-font: 'Domaine Display Narrow', sans-serif;
 
   --font-size-small: 14px;
   --font-size-medium: 16px;
   --font-size-medium-2: 20px;
-  --font-size-large: 48px;
+  --font-size-medium-3: 24px;
+  --font-size-large: 32px;
+  --font-size-super-large: 48px;
 }
 
 
@@ -81,11 +82,75 @@ input,
 textarea {
   background-color: #fff;
   font-family: var(--regular-font);
-  font-size: var(--font-size-normal);
-  font-weight: var(--font-normal);
+  font-size: var(--font-size-medium);
 }
 
 .domaine__font {
   font-family: var(--domaine-font);
   font-weight: 500;
+}
+
+h2 {
+  font-size: var(--font-size-large);
+  font-family: var(--bold-font);
+  color: var(--text-secondary-color);
+  line-height: 120%;
+}
+
+h4 {
+  font-size: var(--font-size-medium-2);
+  font-family: var(--bold-font);
+  line-height: 140%;
+}
+
+h4 small {
+  font-size: var(--font-size-small);
+  font-family: var(--regular-font);
+  display: block;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 140%;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: var(--bold-font);
+  color: var(--text-secondary-color);
+}
+
+/*================ RESPONSIVE ================*/
+
+/*========= Defauit (for mobile devices and more) ========= */
+.container {
+  max-width: 100%;
+}
+
+/*========= Desktop Devices ========= */
+@media only screen and (min-width: 1760px) {}
+
+@media only screen and (min-width: 1160px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/*========= Tablet Devices ========= */
+@media only screen and (min-width: 600px) {
+
+  h2 {
+    line-height: 120%;
+  }
+  
+  h5{
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: var(--font-size-medium-3);
+    line-height: 130%;
+  }
+
 }

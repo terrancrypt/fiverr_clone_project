@@ -1,0 +1,22 @@
+.call__to__action-content{
+    background-image: url('https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_2.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608129/bg-signup-1400-x2.png');
+    background-size: cover;
+    background-position: right;
+}
+
+.call__to__action-button{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 12px 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: 70ms cubic-bezier(.75,0,.25,1);
+    background-color: var(--primary-color);
+}

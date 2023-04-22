@@ -1,0 +1,18 @@
+.projects{
+    background-color: #f5f5f5;
+}
+
+.projects .projects__content .projects__slider .projects__slider-item {
+    width: 309px !important;
+    padding-bottom: 8px !important;
+    padding: 0 18px;
+}
+
+.projects .projects__content .projects__slider .projects__slider-item .projects__slider-heading {
+    font-family: var(--bold-font);
+    color: var(--text-secondary-color);
+}
+
+.projects .projects__content .projects__slider .projects__slider-item .projects__slider-desc {
+    color: #95979d;
+}

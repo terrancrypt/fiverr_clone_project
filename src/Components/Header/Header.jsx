@@ -7,11 +7,15 @@ import HeaderSearch from "./MainHeader/HeaderSearch";
 
 const Header = () => {
   return (
-    <header className="header fixed w-full bg-white">
-      <div className="header__main flex justify-between items-center container">
-        <HeaderLogo />
-        <HeaderSearch />
-        <HeaderNav />
+    <header className="header fixed w-full z-50">
+      <div className="header__main">
+        <div className="header__main-border">
+        <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
+          <HeaderLogo />
+          <HeaderSearch />
+          <HeaderNav />
+        </div>
+        </div>
       </div>
       <div className="header__categories">
         <HeaderCategories />
