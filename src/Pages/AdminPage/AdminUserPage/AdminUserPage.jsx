@@ -11,14 +11,6 @@ export default function AdminUserPage() {
   let stringSearch = window.location.search.substring(1);
   console.log(qs.parse(stringSearch));
 
-  useEffect(() => {
-    adminUserService
-      .getUserList()
-      .then((res) => {
-        setUsers(res.data.content);
-      })
-      .catch((err) => {});
-  }, []);
   let handleDelete = (id) => {
     adminUserService
       .deleteUser(id)
@@ -63,7 +55,9 @@ export default function AdminUserPage() {
             ),
           };
         });
+
         setUsers(userArr);
+
       })
       .catch((err) => {});
   };

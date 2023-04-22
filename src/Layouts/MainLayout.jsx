@@ -6,6 +6,7 @@ const MainLayout = ({ Component }) => {
   return (
     <div className="min-h-screen h-full flex flex-col">
       <Header />
+      <br /><br /><br /><br />
       
       <div className="flex-grow">
         <Component />
