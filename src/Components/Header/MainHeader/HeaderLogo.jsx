@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const HeaderLogo = () => {
   return (
-    <div className="header__logo mr-8">
+    <NavLink to="/" className="header__logo mr-8">
       <svg
         width="89"
         height="27"
@@ -20,7 +21,7 @@ const HeaderLogo = () => {
           <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
         </g>
       </svg>
-    </div>
+    </NavLink>
   );
 };
 
