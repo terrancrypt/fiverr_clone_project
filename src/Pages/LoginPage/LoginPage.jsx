@@ -40,7 +40,7 @@ const LoginPage = () => {
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className=" p-6 space-y-4 md:space-y-6 sm:p-8">
             <LoginPageImg/>
-            <Form
+            <Form 
             name="basic"
             labelCol={{
               span: 8,
@@ -60,9 +60,9 @@ const LoginPage = () => {
             layout='vertical'
           >
             <Form.Item
-              label="Username"
+              label="User name"
               name="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        
               rules={[
                 {
                   required: true,
@@ -75,6 +75,7 @@ const LoginPage = () => {
             <Form.Item
               label="Password"
               name="password"
+              
               rules={[
                 {
                   required: true,
