@@ -7,20 +7,10 @@ import qs from "qs";
 
 export default function AdminUserPage() {
   const [users, setUsers] = useState([]);
-  const [searchValue,setSearchValue]=useSearchParams()
-  let stringSearch=window.location.search.substring(1);
+  const [searchValue, setSearchValue] = useSearchParams();
+  let stringSearch = window.location.search.substring(1);
   console.log(qs.parse(stringSearch));
 
-
-
-  // useEffect(() => {
-  //   adminUserService
-  //     .getUserList()
-  //     .then((res) => {
-  //       setUsers(res.data.content);
-  //     })
-  //     .catch((err) => {});
-  // });
   let handleDelete = (id) => {
     adminUserService
       .deleteUser(id)
@@ -76,34 +66,36 @@ export default function AdminUserPage() {
     fetUserList();
   }, []);
 
- 
- let handleSearchOnchange=(e)=>{
-   let {value} =e.target;
-   setSearchValue({
-     keyword:value,
-   })
-   if(!value){
-     fetUserList();
-   }else{
-   adminUserService
-     .getSearchUser(value)
-     .then((res) => {
-       let userArr = res.data.content.map((item) => {
-         return {
-           ...item,
-         };
-       });
-       setUsers(userArr);
-    
-     })
-           .catch((err) => {
-            console.log(err);
-           });
-         }
- }
+  let handleSearchOnchange = (e) => {
+    let { value } = e.target;
+    setSearchValue({
+      keyword: value,
+    });
+    if (!value) {
+      fetUserList();
+    } else {
+      adminUserService
+        .getSearchUser(value)
+        .then((res) => {
+          let userArr = res.data.content.map((item) => {
+            return {
+              ...item,
+            };
+          });
+          setUsers(userArr);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
   return (
     <div className=" text-center">
-      <Input onChange={handleSearchOnchange} placeholder='Tìm kiếm người dùng' className='my-5 border-black placeholder:text-black placeholder:font-medium focus:border-black focus:border-2'  />
+      <Input
+        onChange={handleSearchOnchange}
+        placeholder="Tìm kiếm người dùng"
+        className="my-5 border-black placeholder:text-black placeholder:font-medium focus:border-black focus:border-2"
+      />
       <Table columns={headerUsers} dataSource={users} />;
     </div>
   );
