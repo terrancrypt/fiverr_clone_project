@@ -1,0 +1,25 @@
+/* ================ SIDE BAR ================ */
+.sidebar .sidebar__wrapper .sidebar__content{
+    width: 272px;
+    height: 100%;
+    z-index: 1001;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.sidebar .sidebar__wrapper .sidebar__overlay{
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    left: 0;
+    /* opacity: 0; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: all .2s ease;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+}

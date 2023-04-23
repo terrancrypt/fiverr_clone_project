@@ -16,7 +16,7 @@ export const Laptop = ({ children }) => {
 
 // Tablet 600px => 1159px
 export const Tablet = ({ children }) => {
-  const Tablet = useMediaQuery({ minWidth: 600, maxWidth: 1319 });
+  const Tablet = useMediaQuery({ minWidth: 600, maxWidth: 1159 });
   return Tablet ? children : null;
 };
 

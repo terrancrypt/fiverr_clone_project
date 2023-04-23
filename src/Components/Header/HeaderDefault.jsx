@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css";
-import HeaderLogo from "./MainHeader/HeaderLogo";
-import HeaderCategories from "./HeaderCategories/HeaderCategories";
-import HeaderNav from "./MainHeader/HeaderNav";
-import HeaderSearch from "./MainHeader/HeaderSearch";
+import HeaderLogo from "./HeaderComponents/MainHeader/HeaderLogo";
+import HeaderCategories from "./HeaderComponents/HeaderCategories/HeaderCategories";
+import HeaderNav from "./HeaderComponents/MainHeader/HeaderNav";
+import HeaderSearch from "./HeaderComponents/MainHeader/HeaderSearch";
 
 const HeaderDefault = () => {
   return (

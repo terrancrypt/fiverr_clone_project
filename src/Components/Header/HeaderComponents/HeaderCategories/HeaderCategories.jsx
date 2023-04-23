@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { jobsService } from "../../../services/jobsService";
+import { jobsService } from "../../../../services/jobsService";
 import HeaderCategoriesItem from "./HeaderCategoriesItem";
 
 const HeaderCategories = () => {

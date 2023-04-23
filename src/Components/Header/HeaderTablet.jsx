@@ -4,8 +4,9 @@ import HeaderLogo from "./HeaderComponents/MainHeader/HeaderLogo";
 import HeaderCategories from "./HeaderComponents/HeaderCategories/HeaderCategories";
 import HeaderNav from "./HeaderComponents/MainHeader/HeaderNav";
 import HeaderSearch from "./HeaderComponents/MainHeader/HeaderSearch";
+import HeaderSideBar from "./HeaderComponents/HeaderSideBar/HeaderSideBar";
 
-const HeaderLaptop = () => {
+const HeaderTablet = () => {
   let handleButtonRight = () => {
     // DOM lấy thẻ div bọc ngoài header categories và thẻ div chứa list categories
     let headerCategoriesList = document.getElementById("headerCategoriesList");
@@ -32,13 +33,13 @@ const HeaderLaptop = () => {
     // Cuối cùng thay đổi lên giao diện và xóa button right và chuyển nó thành button left
     headerCategoriesList.style.transform = `translate(${widthChangedown}px)`;
     categorisListButtonRight.classList.replace("block", "hidden");
-    categorisListButtonLeft.classList.replace("hidden","block");
+    categorisListButtonLeft.classList.replace("hidden", "block");
   };
 
-  let handleButtonLeft = () =>{
+  let handleButtonLeft = () => {
     // DOM lấy thẻ div chứa list categories
     let headerCategoriesList = document.getElementById("headerCategoriesList");
-    
+
     let categorisListButtonRight = document.querySelector(
       ".header__categories .categories__button-right"
     );
@@ -49,15 +50,31 @@ const HeaderLaptop = () => {
     // Vì là set thay đổi lại giao diện như cũ nên bớt rườm rà hơn, chỉ cần cho giao diện quay lại như ban đầu là được
     headerCategoriesList.style.transform = `translate(0px)`;
     categorisListButtonRight.classList.replace("hidden", "block");
-    categorisListButtonLeft.classList.replace("block","hidden");
-
-  }
+    categorisListButtonLeft.classList.replace("block", "hidden");
+  };
 
   return (
     <header className="header fixed w-full z-50">
       <div className="header__main">
         <div className="header__main-border">
-          <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
+          <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0 whitespace-nowrap">
+          <div className="mr-3 pt-2">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-9 h-9"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+
             <HeaderLogo />
             <HeaderSearch />
             <HeaderNav />
@@ -107,8 +124,11 @@ const HeaderLaptop = () => {
           </div>
         </div>
       </div>
+
+      {/* ================ SIDE BAR ================ */}
+      <HeaderSideBar/>
     </header>
   );
 };
 
-export default HeaderLaptop;
+export default HeaderTablet;
