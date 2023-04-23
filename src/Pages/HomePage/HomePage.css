@@ -13,6 +13,7 @@
 /*================ Popular Services ================*/
 .popularservices .popularservices__slider{
     height: 345px;
+    margin: 0px -16px;
 }
 
 .popularservices .popularservices__slider-card{

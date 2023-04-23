@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterBottom = () => {
   return (
-    <div className="bottom mt-4 flex justify-between items-center">
+    <div className="bottom mt-4 flex flex-col md:flex-row justify-between items-center">
       <div className="bottom__left flex items-end">
         <svg
           width="77"

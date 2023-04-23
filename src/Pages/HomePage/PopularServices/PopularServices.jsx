@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { items } from "./Data";
+import PopularServicesButtonSlider from "./PopularServicesButtonSlider";
 
 const PopularServices = () => {
   const sliderRef = useRef(null);
@@ -56,76 +57,30 @@ const PopularServices = () => {
   };
 
   return (
-    <div className="popularservices container my-0 mx-auto px-6 sm:px-8 2xl:px-0 pb-24">
-      <h2 className="p-6">Popular professional services</h2>
-      <div className="relative">
-        <Slider
-          ref={sliderRef}
-          {...settings}
-          className="popularservices__slider"
-        >
-          {items.map((item, index) => {
-            return (
-              <NavLink className="popularservices__slider-card" key={index}>
-                <h4 className="absolute px-8 py-4 text-white z-20 ">
-                  <small>{item.desc}</small>
-                  {item.title}
-                </h4>
-                <div className="px-4 z-10 rounded hover:opacity-80 transition-all duration-300 ease-in-out">
-                  <img className="rounded" src={item.url} alt="slide" />
-                </div>
-              </NavLink>
-            );
-          })}
-        </Slider>
-
-        <div className="popularservices__slider-button">
-          <button
-            onClick={() => {
-              sliderRef.current.slickPrev();
-            }}
+    <div className="popularservices">
+      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 pb-24">
+        <h2 className="pb-6">Popular professional services</h2>
+        <div className="relative">
+          <Slider
+            ref={sliderRef}
+            {...settings}
+            className="popularservices__slider -px-4"
           >
-            <div className="bg-white flex items-center justify-center border shadow rounded-full z-50 p-3 absolute top-36 -left-2.5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </div>
-          </button>
-          <button
-            id="previous-arrow"
-            className="arrow-btn prev"
-            onClick={() => {
-              sliderRef.current.slickNext();
-            }}
-          >
-            <div className="bg-white flex items-center justify-center border shadow rounded-full z-50 p-3 absolute top-36 -right-2.5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </div>
-          </button>
+            {items.map((item, index) => {
+              return (
+                <NavLink className="popularservices__slider-card" key={index}>
+                  <h4 className="absolute px-8 py-4 text-white z-20 ">
+                    <small>{item.desc}</small>
+                    {item.title}
+                  </h4>
+                  <div className="px-4 z-10 rounded hover:opacity-80 transition-all duration-300 ease-in-out">
+                    <img className="rounded w-full object-cover" src={item.url} alt="slide" />
+                  </div>
+                </NavLink>
+              );
+            })}
+          </Slider>
+          <PopularServicesButtonSlider sliderRef={sliderRef} />
         </div>
       </div>
     </div>
