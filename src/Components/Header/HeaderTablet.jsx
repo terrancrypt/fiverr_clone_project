@@ -5,6 +5,7 @@ import HeaderCategories from "./HeaderComponents/HeaderCategories/HeaderCategori
 import HeaderNav from "./HeaderComponents/MainHeader/HeaderNav";
 import HeaderSearch from "./HeaderComponents/MainHeader/HeaderSearch";
 import HeaderSideBar from "./HeaderComponents/HeaderSideBar/HeaderSideBar";
+import { handleShowSideBar } from "./HeaderComponents/HeaderSideBar/SideBarFunction";
 
 const HeaderTablet = () => {
   let handleButtonRight = () => {
@@ -58,7 +59,7 @@ const HeaderTablet = () => {
       <div className="header__main">
         <div className="header__main-border">
           <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0 whitespace-nowrap">
-          <div className="mr-3 pt-2">
+          <div className="mr-3 pt-2" onClick={handleShowSideBar}>
           <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -74,7 +75,6 @@ const HeaderTablet = () => {
               />
             </svg>
           </div>
-
             <HeaderLogo />
             <HeaderSearch />
             <HeaderNav />

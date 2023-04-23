@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
-import { Default, Laptop, Tablet } from "../../Layouts/responsiveLayout";
+import { Default, Laptop, Mobile, Tablet } from "../../Layouts/responsiveLayout";
 import HeaderDefault from "./HeaderDefault";
 import HeaderLaptop from "./HeaderLaptop";
 import HeaderTablet from "./HeaderTablet";
+import HeaderMobile from "./HeaderMobile";
 
 const Header = () => {
   return (
@@ -11,12 +12,15 @@ const Header = () => {
     <Default>
       <HeaderDefault/>
     </Default>
-    {/* <Laptop>
+    <Laptop>
       <HeaderLaptop/>
     </Laptop>
     <Tablet>
       <HeaderTablet/>
-    </Tablet> */}
+    </Tablet>
+    <Mobile>
+      <HeaderMobile/>
+    </Mobile>
     </>
   );
 };
