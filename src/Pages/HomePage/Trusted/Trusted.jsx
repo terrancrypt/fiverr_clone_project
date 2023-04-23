@@ -33,7 +33,7 @@ const Trusted = () => {
   return (
     <div className="homepage__trusted ">
       <div className="trusted__content container my-0 mx-auto px-6 sm:px-8 2xl:px-0 h-24 mb-24 flex justify-center items-center space-x-14">
-        <span>Trusted by:</span>
+        <span className="hidden lg:block">Trusted by:</span>
         <ul className="flex justify-center items-center space-x-10">
           {renderImage()}
         </ul>

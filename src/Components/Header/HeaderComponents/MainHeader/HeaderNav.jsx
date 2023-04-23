@@ -7,10 +7,10 @@ const HeaderNav = () => {
         <li className="fiverr__business">
           <a href="#">Fiverr Business</a>
         </li>
-        <li>
+        <li className="fiverr__explore">
           <a href="#">Explore</a>
         </li>
-        <li className="flex items-center">
+        <li className="header__nav-language flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -30,7 +30,7 @@ const HeaderNav = () => {
             English
           </a>
         </li>
-        <li>
+        <li className="fiverr__become">
           <a href="#">Become a Seller</a>
         </li>
         <li>

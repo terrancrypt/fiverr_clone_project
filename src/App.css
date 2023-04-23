@@ -90,6 +90,13 @@ textarea {
   font-weight: 500;
 }
 
+h1 {
+  font-family: "MacanBold", Arial, Helvetica, sans-serif;
+  color: var(--text-white);
+  font-size: 32px;
+  line-height: 40px;
+}
+
 h2 {
   font-size: var(--font-size-large);
   font-family: var(--bold-font);
@@ -140,11 +147,17 @@ h6 {
 /*========= Tablet Devices ========= */
 @media only screen and (min-width: 600px) {
 
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+
   h2 {
     line-height: 120%;
   }
-  
-  h5{
+
+  h5 {
     font-size: 20px;
   }
 
