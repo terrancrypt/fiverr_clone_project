@@ -1,4 +1,5 @@
 import React from "react";
+import "./Trusted.css";
 
 const Trusted = () => {
   let arrImage = [
@@ -34,9 +35,7 @@ const Trusted = () => {
     <div className="homepage__trusted ">
       <div className="trusted__content container my-0 mx-auto px-6 sm:px-8 2xl:px-0 h-24 mb-24 flex justify-center items-center">
         <span className="hidden lg:block mr-4">Trusted by:</span>
-        <ul className="flex justify-center items-center">
-          {renderImage()}
-        </ul>
+        <ul className="flex justify-center items-center">{renderImage()}</ul>
       </div>
     </div>
   );

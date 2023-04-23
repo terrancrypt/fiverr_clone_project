@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { items } from "./Data";
+import "./PopularServices.css";
 import PopularServicesButtonSlider from "./PopularServicesButtonSlider";
 
 const PopularServices = () => {
@@ -74,7 +75,11 @@ const PopularServices = () => {
                     {item.title}
                   </h4>
                   <div className="px-4 z-10 rounded hover:opacity-80 transition-all duration-300 ease-in-out">
-                    <img className="rounded w-full object-cover" src={item.url} alt="slide" />
+                    <img
+                      className="rounded w-full object-cover"
+                      src={item.url}
+                      alt="slide"
+                    />
                   </div>
                 </NavLink>
               );

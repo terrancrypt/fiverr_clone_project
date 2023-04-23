@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./HomePage.css";
 import CarouselHomePage from "./Carousel/CarouselHomePage";
 import Trusted from "./Trusted/Trusted";
 import PopularServices from "./PopularServices/PopularServices";
