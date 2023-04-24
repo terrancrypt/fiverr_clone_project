@@ -7,7 +7,7 @@ const ExploreItem = () => {
     <>
       {dataExplore.map((item, index) => {
         return (
-          <NavLink key={index} className="explore__item text-center flex flex-col mb-14 justify-center items-center space-y-4">
+          <NavLink key={index} className="explore__item text-center flex flex-col mb-14 justify-start items-center space-y-4">
             <div className="explore__item-img w-12 h-12 relative">
               <img
               className="block"

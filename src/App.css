@@ -55,7 +55,7 @@
   --font-size-medium: 16px;
   --font-size-medium-2: 20px;
   --font-size-medium-3: 24px;
-  --font-size-large: 32px;
+  --font-size-large: 28px;
   --font-size-super-large: 48px;
 }
 
@@ -152,8 +152,8 @@ h6 {
     line-height: 48px;
   }
 
-
   h2 {
+    font-size: 32px;
     line-height: 120%;
   }
 

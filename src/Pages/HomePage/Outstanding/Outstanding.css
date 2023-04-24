@@ -32,7 +32,7 @@
     padding: 0;
 }
 
-/*======= Responsive ========*/
+/*======= Outstanding Responsive ========*/
 @media only screen and (min-width: 900px) {
     .outstanding .outstanding__content{
         flex-direction: row;
