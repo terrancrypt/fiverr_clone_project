@@ -19,11 +19,11 @@ const HeaderCategories = () => {
   return (
     <div className="header__categories-wrapper">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
-        <div id="categoriesListWrapper" className="relative h-10">
+        <div id="categoriesListWrapper" className="relative">
           <ul id="headerCategoriesList"  className="header__categories-list flex justify-between items-center whitespace-nowrap space-x-5">
             {categories.map((item, index) => {
               return (
-                <li className="my-2" key={index}>
+                <li className="my-2.5 z-30 cursor-pointer" key={index}>
                   <NavLink className="header__categories-item">
                     {item.tenLoaiCongViec}
                   </NavLink>

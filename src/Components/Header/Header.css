@@ -123,21 +123,24 @@
     width: 0;
 }
 
-.header__categories ul li a:hover:after {
+.header__categories ul li:hover a::after{
     width: 100%;
     left: 0;
+    z-index: 20;
 }
 
 .header__categories .header__dropdown {
     position: absolute;
-    top: 33px;
+    top: 27px;
     left: -10px;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    transition: visibility .2s;
 }
 
 .header__categories ul li:hover .header__dropdown,
 .header__categories .header__dropdown:hover {
-    display: block;
+   visibility: visible;
 }
 
 .header__categories .header__dropdown p {
