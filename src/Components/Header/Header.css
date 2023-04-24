@@ -44,6 +44,10 @@
     background-color: var(--text-secondary-color);
 }
 
+.header__nav ul {
+    margin: 0!important;
+}
+
 .header__nav ul li {
     padding-right: 24px;
     font-weight: 600;
