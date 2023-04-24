@@ -133,14 +133,15 @@
     position: absolute;
     top: 27px;
     left: -10px;
-    /* display: none; */
+    opacity: 0;
     visibility: hidden;
-    transition: visibility .2s;
+    transition: visibility .2s, opacity .5s;
 }
 
 .header__categories ul li:hover .header__dropdown,
 .header__categories .header__dropdown:hover {
    visibility: visible;
+   opacity: 1;
 }
 
 .header__categories .header__dropdown p {
