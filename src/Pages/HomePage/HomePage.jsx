@@ -10,7 +10,7 @@ import Ads from "./Ads/Ads";
 import Projects from "./Projects/Projects";
 import Guides from "./Guides/Guides";
 import CallToAction from "./CallToAction/CallToAction";
-import { scrollHeader } from "./Funtions/ScrollHeaderFuntion";
+import { scrollHeader } from "./Functions/ScrollHeaderFunction";
 
 const HomePage = () => {
   useEffect(() => {

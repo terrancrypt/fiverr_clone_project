@@ -19,7 +19,7 @@ const HeaderCategories = () => {
   return (
     <div className="header__categories-wrapper">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
-        <div id="categoriesListWrapper" className="relative">
+        <div id="categoriesListWrapper" className="relative bg-white">
           <ul id="headerCategoriesList"  className="header__categories-list flex justify-between items-center whitespace-nowrap space-x-5">
             {categories.map((item, index) => {
               return (

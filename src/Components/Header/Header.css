@@ -167,14 +167,6 @@
 }
 
 /*================ RESPONSIVE ================*/
-@media only screen and (min-width: 1160px) and (max-width: 1319px) {
-    .header__categories .header__categories-list {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(0%);
-    }
-}
 
 @media only screen and (min-width: 900px) and (max-width: 1159px) {
     .header__nav .header__nav-language {
