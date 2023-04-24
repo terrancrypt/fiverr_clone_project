@@ -70,7 +70,7 @@
 /*================ Responsive ================*/
 @media only screen and (min-width: 1160px){
     .homepage__carousel .homepage__carousel-content{
-        width: 650px!important;
+        width: 650px;
     }
 }
 
@@ -109,5 +109,11 @@
         border-radius: 4px;
         padding: 10px 0px;
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .homepage__carousel .homepage__carousel-content{
+        padding: 0px 30px;
     }
 }

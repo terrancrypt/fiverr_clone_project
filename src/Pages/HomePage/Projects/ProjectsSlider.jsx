@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import ProjectsSliderButton from "./ProjectsSliderButton";
-import { jobsService } from "../../../services/jobsService";
 import { projectsData } from "./projectsData";
 
 const ProjectsSlider = () => {
@@ -54,37 +53,34 @@ const ProjectsSlider = () => {
     ],
   };
 
-
-  let renderJobs = () =>{
-    return projectsData.map((item, index)=>{
-      return <div className="projects__slider-item" key={index}>
-      <div className="bg-white border border-gray-200 rounded-lg shadow">
-        <NavLink className="w-10 h-10" href="#">
-          <img
-            className="projects__slider-image rounded-t-lg object-cover w-full"
-            src={item.urlImage}
-            alt=""
-          />
-        </NavLink>
-        <div className="flex justify-start items-center py-4 pl-4">
-          <img
-            className=" rounded-full"
-            src={item.urlAvatar}
-            alt=""
-          />
-          <div className="pl-3">
-            <NavLink className="projects__slider-heading block text-sm">
-             {item.title}
+  let renderJobs = () => {
+    return projectsData.map((item, index) => {
+      return (
+        <div className="projects__slider-item" key={index}>
+          <div className="bg-white border border-gray-200 rounded-lg shadow">
+            <NavLink className="w-10 h-10" href="#">
+              <img
+                className="projects__slider-image rounded-t-lg object-cover w-full"
+                src={item.urlImage}
+                alt=""
+              />
             </NavLink>
-            <NavLink className="projects__slider-desc text-sm">
-             by {item.author}
-            </NavLink>
+            <div className="flex justify-start items-center py-4 pl-4">
+              <img className=" rounded-full" src={item.urlAvatar} alt="" />
+              <div className="pl-3">
+                <NavLink className="projects__slider-heading block text-sm">
+                  {item.title}
+                </NavLink>
+                <NavLink className="projects__slider-desc text-sm">
+                  by {item.author}
+                </NavLink>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    })
-  }
+      );
+    });
+  };
 
   return (
     <>
