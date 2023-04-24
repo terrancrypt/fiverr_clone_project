@@ -15,7 +15,7 @@ const TestimonialsModal = ({ item }) => {
 
   return (
     <>
-      <div onClick={showModal} className="testimonials__item-img w-2/5 relative">
+      <div onClick={showModal} className="testimonials__item-img w-full lg:w-2/5 relative">
         <img
           className="rounded w-full h-full cursor-pointer"
           src={item.urlImage}

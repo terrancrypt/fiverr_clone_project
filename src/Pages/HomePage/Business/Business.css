@@ -3,8 +3,7 @@
 }
 
 .business .business__content .business__item {
-    padding-right: 5%;
-    max-width: 46.66667%
+    max-width: 100%;
 }
 
 .business .business__content .business__item-logo span {
@@ -48,9 +47,20 @@
     background-color: var(--primary-color);
 }
 
-
-
-/*================ Business Image ================*/
 .business .business__content .business__image {
-    max-width: 53.33333%;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+/*================ Business Responsive ================*/
+@media only screen and (min-width: 1024px) {
+    .business .business__content .business__item {
+        padding-right: 5%;
+        max-width: 46.66667%
+    }
+    
+    .business .business__content .business__image {
+        padding-top: 0;
+        max-width: 53.33333%;
+    }
 }

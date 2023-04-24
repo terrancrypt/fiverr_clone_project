@@ -6,11 +6,11 @@ import { NavLink } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="projects">
-      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24">
-        <div className="projects__title flex justify-between pb-6">
+      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24 relative">
+        <div className="projects__title flex justify-between items-center pb-6">
           <h2>Inspiring work made on Fiverr</h2>
-          <NavLink className="flex items-center text-blue-700 pt-4">
-            <span className="pr-2">See more</span>
+          <NavLink className="flex items-center text-blue-700 pt-4 absolute bottom-16 md:static pb-2 pl-2">
+            <span className="pr-2 ">See more</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

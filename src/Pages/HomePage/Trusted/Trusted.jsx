@@ -1,4 +1,5 @@
 import React from "react";
+import "./Trusted.css";
 
 const Trusted = () => {
   let arrImage = [
@@ -23,7 +24,7 @@ const Trusted = () => {
   let renderImage = () => {
     return arrImage.map((image, index) => {
       return (
-        <li className="block h-auto" key={index}>
+        <li className="block h-auto mx-5" key={index}>
           <img className="w-20 h-auto" src={image.url} alt={image.alt} />
         </li>
       );
@@ -32,11 +33,9 @@ const Trusted = () => {
 
   return (
     <div className="homepage__trusted ">
-      <div className="trusted__content container my-0 mx-auto px-6 sm:px-8 2xl:px-0 h-24 mb-24 flex justify-center items-center space-x-14">
-        <span className="hidden lg:block">Trusted by:</span>
-        <ul className="flex justify-center items-center space-x-10">
-          {renderImage()}
-        </ul>
+      <div className="trusted__content container my-0 mx-auto px-6 sm:px-8 2xl:px-0 h-24 mb-24 flex justify-center items-center">
+        <span className="hidden lg:block mr-4">Trusted by:</span>
+        <ul className="flex justify-center items-center">{renderImage()}</ul>
       </div>
     </div>
   );

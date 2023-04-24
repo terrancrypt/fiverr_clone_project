@@ -1,18 +1,7 @@
-
-
-/*================ Trusted ================*/
-.homepage__trusted {
-    background-color: #fafafa;
-}
-
-.homepage__trusted .trusted__content span {
-    font-family: var(--bold-font);
-    color: #b5b6ba;
-}
-
 /*================ Popular Services ================*/
 .popularservices .popularservices__slider{
     height: 345px;
+    margin: 0px -16px;
 }
 
 .popularservices .popularservices__slider-card{

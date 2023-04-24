@@ -145,12 +145,16 @@
     color: var(--text-bland-color);
 }
 
-.header__categories .categories__button-right{
-    background: linear-gradient(270deg,#fff 50%,hsla(0,0%,100%,0));
+.header__categories .categories__button-right {
+    background: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 100%, 0));
 }
 
-.header__categories .categories__button-left{
-    background: linear-gradient(90deg,#fff 50%,hsla(0,0%,100%,0));
+.header__categories .categories__button-left {
+    background: linear-gradient(90deg, #fff 50%, hsla(0, 0%, 100%, 0));
+}
+
+.header__categories .header__categories-list {
+    transition: transform .2s;
 }
 
 /*================ RESPONSIVE ================*/
@@ -159,20 +163,23 @@
         position: absolute;
         top: 0;
         left: 0;
-        transition: transform .2s;
         transform: translateX(0%);
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1159px){
-    .header__nav .header__nav-language{
+@media only screen and (min-width: 900px) and (max-width: 1159px) {
+    .header__nav .header__nav-language {
         display: none;
     }
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px){
-    .header__nav .header__nav-language, .fiverr__business, .fiverr__explore, .fiverr__become{
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    .header__nav .header__nav-language,
+    .fiverr__business,
+    .fiverr__explore,
+    .fiverr__become {
         display: none;
     }
 }

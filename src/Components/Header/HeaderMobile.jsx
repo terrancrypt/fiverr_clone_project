@@ -1,9 +1,5 @@
 import React from "react";
 import "./Header.css";
-import HeaderLogo from "./HeaderComponents/MainHeader/HeaderLogo";
-import HeaderCategories from "./HeaderComponents/HeaderCategories/HeaderCategories";
-import HeaderNav from "./HeaderComponents/MainHeader/HeaderNav";
-import HeaderSearch from "./HeaderComponents/MainHeader/HeaderSearch";
 import HeaderSideBar from "./HeaderComponents/HeaderSideBar/HeaderSideBar";
 import { handleShowSideBar } from "./HeaderComponents/HeaderSideBar/SideBarFunction";
 import { NavLink } from "react-router-dom";
@@ -14,7 +10,7 @@ const HeaderMobile = () => {
       <div className="header__main">
         <div className="header__main-border">
           <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
-            <div className="" onClick={handleShowSideBar}>
+            <div className="header__main-sidebarbutton w-10" onClick={handleShowSideBar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
