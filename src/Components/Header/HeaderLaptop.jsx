@@ -8,6 +8,7 @@ import { handleButtonLeft, handleButtonRight } from "./Funtions/CategoriesButton
 
 const HeaderLaptop = () => {
 
+
   return (
     <header className="header fixed w-full z-50">
       <div className="header__main">
