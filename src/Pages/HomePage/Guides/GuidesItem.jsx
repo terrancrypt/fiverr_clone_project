@@ -11,7 +11,7 @@ const GuidesItem = () => {
             <div className="bg-transparent rounded">
               <NavLink href="#">
                 <img
-                  className="rounded-t-lg"
+                  className="rounded-t-lg hover:opacity-80 transition-all duration-300"
                   src={item.urlImage}
                   alt=""
                 />

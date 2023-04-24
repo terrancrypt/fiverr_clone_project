@@ -5,7 +5,7 @@ const AdsMobile = () => {
   return (
     <div className="homepage__ads container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24">
       <div className="homepage__ads-banner flex flex-start relative pb-80 lg:h-auto">
-        <div className="homepage__ads-text pl-9 lg:pl-20 pt-9 z-20">
+        <div className="homepage__ads-text px-9 lg:pl-20 pt-9 z-20">
           <div className="homepage__ads-logo pb-4">
             <svg
               width="188"

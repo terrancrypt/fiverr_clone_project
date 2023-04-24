@@ -60,7 +60,7 @@ const ProjectsSlider = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow">
             <NavLink className="w-10 h-10" href="#">
               <img
-                className="projects__slider-image rounded-t-lg object-cover w-full"
+                className="projects__slider-image rounded-t-lg object-cover w-full hover:opacity-80 transition-all duration-300"
                 src={item.urlImage}
                 alt=""
               />

@@ -22,6 +22,10 @@
     background-color: var(--primary-color);
 }
 
+.call__to__action-button:hover{
+    background-color: #19a463;
+}
+
 /* ==== CallToAction Responsive */
 
 @media only screen and (max-width: 900px) {

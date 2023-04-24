@@ -12,7 +12,7 @@ const CallToAction = () => {
               Suddenly it's all so{" "}
               <span className="domaine__font italic">doable</span>.
             </h2>
-            <NavLink className="call__to__action-button text-white">
+            <NavLink className="call__to__action-button text-white ">
                 Join Fiverr
             </NavLink>
           </div>
