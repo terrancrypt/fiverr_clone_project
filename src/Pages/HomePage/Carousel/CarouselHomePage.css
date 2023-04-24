@@ -26,7 +26,7 @@
 
 .homepage__carousel .homepage__carousel-content .popular__links {
     font-family: "MacanBold", Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .homepage__carousel .homepage__carousel-content .popular__links a {
@@ -70,7 +70,7 @@
 /*================ Responsive ================*/
 @media only screen and (min-width: 1160px){
     .homepage__carousel .homepage__carousel-content{
-        width: 650px;
+        width: 650px!important;
     }
 }
 

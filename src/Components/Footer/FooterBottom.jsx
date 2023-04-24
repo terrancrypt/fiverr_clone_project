@@ -23,7 +23,7 @@ const FooterBottom = () => {
           © Fiverr International Ltd. 2023
         </span>
       </div>
-      <div className="bottom__right flex justify-between items-center">
+      <div className="bottom__right flex flex-col sm:flex-row justify-between items-center">
         <div className="flex items-center justify-between space-x-8 pr-8">
           <NavLink>
             <svg

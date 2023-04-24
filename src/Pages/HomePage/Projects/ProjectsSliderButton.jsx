@@ -8,7 +8,7 @@ const ProjectsSliderButton = ({projectsSliderRef}) => {
         projectsSliderRef.current.slickPrev();
       }}
     >
-      <div className="bg-white flex items-center justify-center drop-shadow-lg rounded-full z-50 p-3 absolute top-32 -left-2">
+      <div className="bg-white flex items-center justify-center drop-shadow-lg rounded-full z-40 p-3 absolute top-32 -left-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -32,7 +32,7 @@ const ProjectsSliderButton = ({projectsSliderRef}) => {
         projectsSliderRef.current.slickNext();
       }}
     >
-      <div className="bg-white flex items-center justify-center drop-shadow-lg rounded-full z-50 p-3 absolute top-32 -right-4">
+      <div className="bg-white flex items-center justify-center drop-shadow-lg rounded-full z-40 p-3 absolute top-32 -right-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
