@@ -13,7 +13,7 @@ const FooterDefault = () => {
             <ul className="pb-5">
               {item.links.map((links, index)=>{
                 return <li className="mb-4 text-gray-500" key={index}>
-                  <NavLink>
+                  <NavLink className="hover:underline hover:underline-offset-1">
                     {links}
                   </NavLink>
                 </li>

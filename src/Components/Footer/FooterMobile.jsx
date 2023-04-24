@@ -19,7 +19,7 @@ const FooterMobile = () => {
               <Panel header={item.title} key={index}>
                 {item.links.map((link, id) => {
                   return (
-                    <NavLink className="block" key={id}>
+                    <NavLink className="block hover:underline hover:underline-offset-1" key={id}>
                       {link}
                     </NavLink>
                   );
