@@ -53,3 +53,17 @@
     color: #95979d;
     font-weight: 400;
 }
+
+/* ========= Colapse ========== */
+.sidebar .ant-collapse .ant-collapse-header{
+    padding: 0;
+    color: #95979d;
+    font-size: 16px;
+    font-family: var(--regular-font);
+}
+
+.sidebar .ant-collapse .ant-collapse-content .ant-collapse-content-box{
+    padding: 10px 0 10px 10px;
+    color: #95979d;
+    font-size: 16px;
+}
