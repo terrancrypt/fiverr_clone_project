@@ -6,7 +6,7 @@ const HeaderCategoriesItem = ({ data }) => {
     <>
       {data.map((item, index) => {
         return (
-          <div className="w-56 mb-2" key={index}>
+          <div className="w-fit mb-2" key={index}>
             <p className="mb-2">{item.tenNhom}</p>
             <div className="flex flex-col">
               {item.dsChiTietLoai.map((detail, index) => {

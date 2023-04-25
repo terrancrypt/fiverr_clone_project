@@ -2,9 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./HeaderSideBar.css";
 import SideBarCategories from "./SideBarCategories";
-import { handleCloseSideBar, handleMenuCategories} from "./SideBarFunction";
+import { handleCloseSideBar } from "./SideBarFunction";
+import { Collapse } from "antd";
 
 const HeaderSideBar = () => {
+  const { Panel } = Collapse;
   return (
     <div className="sidebar">
       <div className="sidebar__wrapper">
@@ -20,29 +22,11 @@ const HeaderSideBar = () => {
                 <NavLink>Sign In</NavLink>
               </li>
               <li>
-                <div
-                  className="flex justify-between items-center"
-                  onClick={() =>
-                    handleMenuCategories(".sidebar__menu-categories")
-                  }
-                >
-                  <NavLink>Browse Categories</NavLink>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </div>
-                <SideBarCategories />
+                <Collapse ghost expandIconPosition="end">
+                  <Panel header="Browse Categories">
+                    <SideBarCategories />
+                  </Panel>
+                </Collapse>
               </li>
               <li>
                 <NavLink>Explore</NavLink>
@@ -59,52 +43,14 @@ const HeaderSideBar = () => {
                   <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <div
-                    className="flex justify-between items-center"
-                    onClick={() =>
-                      handleMenuCategories(".sidebar__menu-categories")
-                    }
-                  >
-                    <NavLink>English</NavLink>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
-                  </div>
+                  <Collapse ghost expandIconPosition="end">
+                    <Panel header="English"></Panel>
+                  </Collapse>
                 </li>
                 <li>
-                  <div
-                    className="flex justify-between items-center"
-                    onClick={() =>
-                      handleMenuCategories(".sidebar__menu-categories")
-                    }
-                  >
-                    <NavLink>US$ USD</NavLink>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
-                  </div>
+                  <Collapse ghost expandIconPosition="end">
+                    <Panel header="US$ USD"></Panel>
+                  </Collapse>
                 </li>
                 <li>
                   <NavLink>Open in App</NavLink>
