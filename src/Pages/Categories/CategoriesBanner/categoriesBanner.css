@@ -1,0 +1,76 @@
+.categories__banner{
+    height: 240px;
+    margin-bottom: 32px;
+    margin-top: 300px;
+    position: relative;
+    color: #fff;
+}
+.categories__banner .categories__banner {
+
+    background: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/3f1b7ea10295936b6846bcff0afd38cf-1626595415207/digital-marketing-desktop.png) repeat center;
+    background-position: 50%;
+
+    background-size: cover;
+    border-radius: 10px;
+    height: 100%;
+}
+.categories__banner .categories__banner .banner__content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+}
+.categories__banner .categories__banner .banner__content h1{
+ 
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+
+}
+.categories__banner .categories__banner .banner__content p{
+  
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 8px 0 0;
+}
+.categories__banner .categories__banner .banner__content button{
+    margin-top: 24px;
+    padding: 10px 16px;
+}
+.categories__banner .categories__banner .banner__content .banner__button{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.categories__banner .categories__banner .banner__content .banner__icon{
+    color: #fff;
+    margin-right: 7px;
+}
+.categories__banner .categories__banner .banner__content .btn-play{
+    align-items: center;
+    background: transparent;
+    border-color: #fff;
+    display: inline-flex;
+    font-weight: 400;
+}
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}

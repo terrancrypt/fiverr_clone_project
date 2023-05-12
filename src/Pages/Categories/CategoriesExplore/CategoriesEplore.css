@@ -1,0 +1,14 @@
+.categories__explore .container h1 {
+    color: #404145;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.categories__explore .container .explore__content .item h1 {
+    color: #222325;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 20px 0;
+}

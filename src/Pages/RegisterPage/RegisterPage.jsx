@@ -200,6 +200,7 @@ const RegisterPage = () => {
                         type="radio"
                         name="gender"
                         defaultValue="true"
+                        value="Nam"
                         defaultChecked
                       />
                       <label className="radio__label" for="male">
@@ -210,6 +211,7 @@ const RegisterPage = () => {
                         type="radio"
                         name="gender"
                         defaultValue="false"
+                        value='Nữ'
                         
                       />
                       <label className="radio__label" for="female">

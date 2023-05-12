@@ -2,6 +2,7 @@ import MainLayout from "../Layouts/MainLayout";
 import HomePage from "../Pages/HomePage/HomePage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import RegisterPage from "../Pages/RegisterPage/RegisterPage";
+import Categories from "../Pages/Categories/Categories"
 
 export const mainRoutes = [
   {
@@ -15,6 +16,10 @@ export const mainRoutes = [
   {
     url: "/register",
     component: <MainLayout Component={RegisterPage} />,
+  },
+  {
+    url: "/categories",
+    component: <MainLayout Component={Categories} />,
   },
 
 ];
