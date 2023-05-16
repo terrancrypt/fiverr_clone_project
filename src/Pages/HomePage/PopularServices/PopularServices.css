@@ -1,0 +1,17 @@
+/*================ Popular Services ================*/
+.popularservices .popularservices__slider{
+    height: 345px;
+    margin: 0px -16px;
+}
+
+.popularservices .popularservices__slider-card{
+    width: 268px;
+}
+
+.popularservices .popularservices__slider-card img{
+    height: 345px;
+}
+
+.slick-next:before {
+    content: '>';
+}

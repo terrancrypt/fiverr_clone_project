@@ -3,7 +3,6 @@
 }
 
 .projects .projects__content .projects__slider .projects__slider-item {
-    width: 309px !important;
     padding-bottom: 8px !important;
     padding: 0 18px;
 }
@@ -15,4 +14,8 @@
 
 .projects .projects__content .projects__slider .projects__slider-item .projects__slider-desc {
     color: #95979d;
+}
+
+.projects .projects__content .projects__slider .projects__slider-item .projects__slider-image{
+    height: 237px;
 }

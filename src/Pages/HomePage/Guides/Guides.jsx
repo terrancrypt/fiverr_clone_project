@@ -6,10 +6,10 @@ import "./Guides.css";
 const Guides = () => {
   return (
     <div className="guides">
-      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24">
-        <div className="flex justify-between pb-6">
+      <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24 relative">
+        <div className="flex justify-between items-center pb-6">
           <h2>Guides to help you grow</h2>
-          <NavLink className="flex items-center text-blue-700 pt-4">
+          <NavLink className="flex items-center text-blue-700 absolute bottom-14 md:static pt-4 pb-2">
             <span className="pr-2">See more</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const Guides = () => {
             </svg>
           </NavLink>
         </div>
-        <div className="guides__content grid grid-cols-3 -mx-4">
+        <div className="guides__content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 -mx-4">
           <GuidesItem />
         </div>
       </div>

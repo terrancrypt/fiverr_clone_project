@@ -1,0 +1,65 @@
+/* ============= Footer =========== */
+footer .ant-collapse .ant-collapse-item {
+  border: none;
+}
+
+footer .ant-collapse .ant-collapse-item .ant-collapse-header {
+  font-family: var(--bold-font);
+  font-size: var(--font-size-medium);
+  padding: 0 0 20px 0;
+}
+
+footer .ant-collapse .ant-collapse-item .ant-collapse-content-box {
+  padding: 0;
+}
+
+footer .ant-collapse .ant-collapse-item .ant-collapse-content-box a {
+  font-size: var(--font-size-medium);
+  color: var(--text-primary-color);
+  font-family: var(--regular-font);
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+/* ============= Footer Bottom Social =========== */
+footer .bottom .bottom__right li {
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 8px;
+  transition: all .2s;
+}
+
+footer .bottom .bottom__right li:hover {
+  background-color: #efeff0;
+}
+
+
+/* ============= Footer Bottom General =========== */
+footer .bottom__general-language,
+footer .bottom__general-usd {
+  border-radius: 54px;
+  transition: all .2s;
+}
+
+footer .bottom__general-language:hover,
+footer .bottom__general-usd:hover {
+  background-color: #f5f5f5;
+  color: #404145;
+}
+
+footer .bottom__general-accessibility:hover circle {
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
+  transition: all .2s;
+}
+
+/* ============= Footer Bottom Responsive =========== */
+@media only screen and (min-width: 899px) {
+  footer .bottom__left{
+    padding-top: 8px;
+  }
+  footer .bottom {
+    flex-direction: row;
+  }
+
+}

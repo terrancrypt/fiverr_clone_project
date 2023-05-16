@@ -7,11 +7,11 @@ const GuidesItem = () => {
     <>
       {dataGuides.map((item, index) => {
         return (
-          <div className="guides__item px-4" key={index}>
-            <div className="max-w-sm bg-transparent rounded">
+          <div className="guides__item px-4 pb-6" key={index}>
+            <div className="bg-transparent rounded">
               <NavLink href="#">
                 <img
-                  className="rounded-t-lg"
+                  className="rounded-t-lg hover:opacity-80 transition-all duration-300"
                   src={item.urlImage}
                   alt=""
                 />

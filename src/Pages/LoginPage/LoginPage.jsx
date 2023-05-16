@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./loginPage.css";
 import { useDispatch } from "react-redux";
 import { userService } from "../../services/loginServices/loginService";
@@ -7,6 +7,7 @@ import { localUserService } from "../../services/loginServices/localService";
 import { setUserLogin } from "../../toolkit/userSlice";
 import { NavLink, useNavigate } from "react-router-dom";
 import LoginPageImg from "./LoginPageImg";
+
 const LoginPage = () => {   
   let dispatch = useDispatch();
   let navigate = useNavigate();
@@ -30,6 +31,7 @@ const LoginPage = () => {
     console.log('Failed:', errorInfo);
     
   };
+
 
   return (
     <>
@@ -102,6 +104,7 @@ const LoginPage = () => {
               <span  > Bạn chưa có tài khoản ? <NavLink className='text-red-500' to="/register"> <u>Đăng kí tại đây</u></NavLink> </span>
             </Form.Item>
           </Form>
+
             </div>
           </div>
         </div>

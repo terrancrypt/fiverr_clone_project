@@ -6,13 +6,13 @@ const CallToAction = () => {
   return (
     <div className="call__to__action">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 mb-24">
-        <div className="call__to__action-content w-full h-full py-32 px-24 rounded">
+        <div className="call__to__action-content w-full h-full rounded">
           <div className="z-10">
             <h2 className="call__to__action-title text-white pb-10 text-5xl">
               Suddenly it's all so{" "}
               <span className="domaine__font italic">doable</span>.
             </h2>
-            <NavLink className="call__to__action-button text-white">
+            <NavLink className="call__to__action-button text-white ">
                 Join Fiverr
             </NavLink>
           </div>

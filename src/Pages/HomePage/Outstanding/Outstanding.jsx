@@ -8,8 +8,8 @@ const Outstanding = () => {
   return (
     <div className="outstanding">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-24">
-        <div className="outstanding__content flex justify-between">
-          <div className="outstanding__text pl-4">
+        <div className="outstanding__content flex flex-col justify-between">
+          <div className="outstanding__text">
             <h2 className="pb-6">
               A whole world of freelance talent at your fingertips
             </h2>
