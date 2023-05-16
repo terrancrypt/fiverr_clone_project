@@ -21,7 +21,7 @@ export default function CategoriesExplore({explore}) {
                       {team.dsChiTietLoai?.map((detail,index)=>{
                         return (
                           <p key={index}>
-                              <NavLink to="" >
+                              <NavLink to={`/categories/${detail.id}`} >
                              {detail.tenChiTiet}
                               </NavLink>
                           </p>
