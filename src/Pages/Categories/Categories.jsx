@@ -18,7 +18,7 @@ const Categories = () => {
  
   useEffect(() => {
     fetchExplore();
-  }, []);
+  }, [explore]);
   return <div className="categories">
     <CategoriesBanner/>
     <CategoriesTitle/>

@@ -1,0 +1,16 @@
+.name {
+    background: none;
+
+    border-radius: 4px;
+    color: #222325;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 0 6px 0 0;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+.tick svg{
+    width: 11px;
+    height: 7px;
+    color: red;
+}
