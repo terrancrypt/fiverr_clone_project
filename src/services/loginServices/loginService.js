@@ -14,7 +14,7 @@ export const userService={
       },
       postRegister: (registerForm) => {
         return axios({
-          url: `${BASE_URL}/api/auth/signin`,
+          url: `${BASE_URL}/api/auth/signup`,
           method: "POST",
           data: registerForm,
           headers: configHeaders(),

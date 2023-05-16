@@ -1,0 +1,66 @@
+.register__input{
+    border-radius: 6px!important;
+    font-size: 14px!important;
+    box-sizing: border-box!important;
+    padding: 4px 11px;
+
+}
+.register__password{
+    font-size: 14px!important;
+}
+.register__gender {
+    left: 20px!important;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    
+}
+.register__gender .radio {
+    margin-left: -20px!important;
+    margin: 0.5rem;
+}
+.register__gender .gender_inp {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    margin-left: 40px;
+}
+.register__gender .radio input[type=radio] {
+    opacity: 0;
+    position: absolute;
+}
+.register__gender .gender_inp input {
+    height: 20px;
+    width: 20px;
+}
+.register__gender label{
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    gap: 10px;
+
+}
+.register__gender .radio input[type=radio]:checked+.radio__label:before {
+    background-color: #1dbf73;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+.register__gender .radio input[type=radio]+.radio__label:before {
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 100%;
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    height: 0.8em;
+    left: 20px;
+    margin-right: 1em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    transition: all .25s ease;
+    vertical-align: top;
+    width: 0.8em;
+}

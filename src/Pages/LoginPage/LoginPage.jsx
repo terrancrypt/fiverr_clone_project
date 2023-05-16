@@ -35,7 +35,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <section className="bg-gray-50 dark:bg-gray-900">
+      <section className="bg-gray-50 dark:bg-gray-900 mt-32">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className=" p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -58,6 +58,7 @@ const LoginPage = () => {
             onFinishFailed={onFinishFailed}
             autoComplete="off"
             layout='vertical'
+            
           >
             <Form.Item
               label="User name"
@@ -70,7 +71,7 @@ const LoginPage = () => {
                 },
               ]}
             >
-              <Input  />
+              <Input className="user__input" placeholder="Your Name"/>
             </Form.Item>
             <Form.Item
               label="Password"
@@ -83,19 +84,23 @@ const LoginPage = () => {
                 },
               ]}
             >
-              <Input.Password />
+              <Input.Password className="password__input"  placeholder="Password" />
             </Form.Item>
+
             <Form.Item
               wrapperCol={{
               
                 span: 24,
               }}
-              className="flex justify-center items-center"
+              className="login__submit flex justify-center items-center"
             >
-              <Button className="bg-orange-500 hover:text-white hover:border-hidden" htmlType="submit">
+              
+             
+              <Button className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  " htmlType="submit">
                 Submit
               </Button>
-              <br /><br />
+             
+              <br /> <br />
               <span  > Bạn chưa có tài khoản ? <NavLink className='text-red-500' to="/register"> <u>Đăng kí tại đây</u></NavLink> </span>
             </Form.Item>
           </Form>
