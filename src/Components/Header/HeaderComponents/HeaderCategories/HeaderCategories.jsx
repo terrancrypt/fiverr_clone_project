@@ -24,7 +24,7 @@ const HeaderCategories = () => {
             {categories.map((item, index) => {
               return (
                 <li className="my-2.5 z-30 cursor-pointer" key={index}>
-                  <NavLink className="header__categories-item">
+                  <NavLink to={`/categories/${item.id}`} className="header__categories-item">
                     {item.tenLoaiCongViec}
                   </NavLink>
                   <div className="header__dropdown p-6 shadow bg-white">
