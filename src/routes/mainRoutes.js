@@ -3,6 +3,7 @@ import HomePage from "../Pages/HomePage/HomePage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import RegisterPage from "../Pages/RegisterPage/RegisterPage";
 import Categories from "../Pages/Categories/Categories"
+import CategoriesDetail from "../Pages/Categories/CategoriesDetail/CategoriesDetail";
 
 export const mainRoutes = [
   {
@@ -20,6 +21,10 @@ export const mainRoutes = [
   {
     url: "/title/:id",
     component: <MainLayout Component={Categories} />,
+  },
+  {
+    url: "/categories/:id",
+    component: <MainLayout Component={CategoriesDetail} />,
   },
 
 ];

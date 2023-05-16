@@ -14,12 +14,11 @@ const Categories = () => {
     let fetchExplore = async () => {
       try {
         let result = await categoriesServices.getCategoriesExplore(id);
-        console.log("🚀 ~ file: Categories.jsx:17 ~ fetchExplore ~ result:", result)
         setExplore(result.data.content);
       } catch (error) {}
     };
     fetchExplore();
-  }, []);
+  }, [id]);
   return <div className="categories">
     <CategoriesBanner/>
     <CategoriesTitle/>

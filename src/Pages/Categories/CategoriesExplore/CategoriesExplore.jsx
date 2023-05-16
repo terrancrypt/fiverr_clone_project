@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
-import { categoriesServices } from "../../../services/categoriesServices";
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 import "./CategoriesEplore.css";
 
 export default function CategoriesExplore({explore}) {
@@ -21,8 +21,8 @@ export default function CategoriesExplore({explore}) {
                       {team.dsChiTietLoai?.map((detail,index)=>{
                         return (
                           <p key={index}>
-                              <NavLink >
-                              <a href="#">{detail.tenChiTiet}</a>
+                              <NavLink to="" >
+                             {detail.tenChiTiet}
                               </NavLink>
                           </p>
                         )
