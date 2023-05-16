@@ -11,7 +11,7 @@ const HeaderCategoriesItem = ({ data }) => {
             <div className="flex flex-col">
               {item.dsChiTietLoai.map((detail, index) => {
                 return (
-                  <NavLink className="mb-2" key={index}>
+                  <NavLink  className="mb-2" key={index}>
                     {detail.tenChiTiet}
                   </NavLink>
                 );

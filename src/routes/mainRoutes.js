@@ -18,7 +18,7 @@ export const mainRoutes = [
     component: <MainLayout Component={RegisterPage} />,
   },
   {
-    url: "/categories",
+    url: "/title/:id",
     component: <MainLayout Component={Categories} />,
   },
 
