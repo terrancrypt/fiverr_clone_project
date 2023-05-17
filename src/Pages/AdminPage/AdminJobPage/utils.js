@@ -25,7 +25,7 @@ export const headerjob=[
         title: "Hình ảnh",
         dataIndex: "hinhAnh" ,
         key: "hinhAnh",
-        render: (hinhAnh) => <img className="w-70" src={hinhAnh} />
+        render: (hinhAnh) => <img className="w-100" src={hinhAnh} />
       },  
       {
         title: "Mô tả",
@@ -49,11 +49,6 @@ export const headerjob=[
         dataIndex: "saoCongViec",
         key: "saoCongViec",
       },
-      {
-        title: "Thao tác",
-        dataIndex: "action",
-        key: "action",
-       
-      },
+     
 
 ]

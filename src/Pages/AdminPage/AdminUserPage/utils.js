@@ -42,7 +42,7 @@ export const headerUsers = [
     title: "Hình ảnh",
     dataIndex: "avatar",
     key: "avatar",
-    render: (avatar) => <img className="w-24" src={avatar} />,
+    render: (avatar) => <img className="w-20" src={avatar} />,
   },
   {
     title: "Ngày sinh",
@@ -53,6 +53,7 @@ export const headerUsers = [
     title: "Skill",
     dataIndex: "skill",
     key: "skill",
+    render:(skill)=>{return <p className="w-14" >{skill}</p>}
   },
   {
     title: "Công việc đặt trước",
