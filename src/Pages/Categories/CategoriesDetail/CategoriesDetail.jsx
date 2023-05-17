@@ -8,6 +8,7 @@ import { Switch } from "antd";
 export default function CategoriesDetail() {
   let { id } = useParams();
   const [detail, setDetail] = useState([]);
+  const [numberServices, setNumberServices] = useState(0);
 
   const onChange = (checked) => {
     console.log(`switch to ${checked}`);
@@ -16,12 +17,13 @@ export default function CategoriesDetail() {
   useEffect(() => {
     let fetchDetail = async () => {
       try {
-        let result = await categoriesServices.getDetailCategories(id);
-        setDetail(result.data.content);
+        let {data} = await categoriesServices.getDetailCategories(id);
+        setDetail(data.content);
+        setNumberServices(data.content.length)
       } catch (error) {}
     };
     fetchDetail();
-  }, [detail]);
+  }, []);
 
   return (
     <div className="categories">
@@ -59,7 +61,7 @@ export default function CategoriesDetail() {
         <div className="categories__sort py-3 flex justify-between items-center">
           <div className="categories__number">
             <span className="pre__title">
-              <span id="number"></span>
+              <span id="number">{numberServices}</span>
               <span> services available</span>
             </span>
           </div>
