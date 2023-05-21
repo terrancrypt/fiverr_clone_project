@@ -10,12 +10,43 @@ import Ads from "./Ads/Ads";
 import Projects from "./Projects/Projects";
 import Guides from "./Guides/Guides";
 import CallToAction from "./CallToAction/CallToAction";
-import { scrollHeader } from "./Functions/ScrollHeaderFunction";
 
 const HomePage = () => {
   useEffect(() => {
-    /*================ Scroll Header ================*/
-    scrollHeader();
+    const header = document.querySelector(".header");
+    const headerLogo = document.querySelector("#fillLogo");
+    const handleScroll = () => {
+      if (window.location.pathname === "/") {
+        if (window.scrollY >= 100) {
+          header?.classList.remove("turn__off");
+          headerLogo?.setAttribute("fill", "#404145");
+        } else {
+          header?.classList.add(
+            "turn__off",
+            "turn__off-search",
+            "turn__off-categories"
+          );
+          headerLogo?.setAttribute("fill", "#fff");
+        }
+
+        if (window.scrollY >= 200) {
+          header?.classList.remove("turn__off-search", "turn__off-categories");
+        } else {
+          header?.classList.add("turn__off-search", "turn__off-categories");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      headerLogo?.setAttribute("fill", "#404145");
+      header?.classList.remove(
+        "turn__off",
+        "turn__off-search",
+        "turn__off-categories"
+      );
+    };
   }, []);
 
   return (
