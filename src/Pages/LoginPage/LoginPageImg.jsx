@@ -10,10 +10,10 @@ export default function LoginPageImg() {
       <div className=" flex flex-col space-y-3 ">
         <button
           type="button"
-          class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  "
+          className="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  "
         >
           <svg
-            class="w-5 h-5 mr-6 -ml-1"
+            className="w-5 h-5 mr-6 -ml-1"
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
@@ -31,10 +31,10 @@ export default function LoginPageImg() {
         </button>
         <button
           type="button"
-          class="  text-black bg-yellow-100 hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  "
+          className="  text-black bg-yellow-100 hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  "
         >
           <svg
-            class="w-5 h-5 mr-6 -ml-1"
+            className="w-5 h-5 mr-6 -ml-1"
             viewBox="0 0 18 19"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -59,10 +59,10 @@ export default function LoginPageImg() {
         </button>
         <button
           type="button"
-          class=" text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+          className=" text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
         >
           <svg
-            class="w-5 h-5 mr-6 -ml-1"
+            className="w-5 h-5 mr-6 -ml-1"
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"

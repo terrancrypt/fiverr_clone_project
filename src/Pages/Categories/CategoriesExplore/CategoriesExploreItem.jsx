@@ -6,7 +6,7 @@ const CategoriesExploreItem = ({ item }) => {
     <div className="flex justify-start items-center space-x-4">
       {item.dsNhomChiTietLoai?.map((team, index) => {
         return (
-          <div className="item">
+          <div className="item" key={index}>
             <img src={team.hinhAnh} alt="" />
             <h1>{team.tenNhom}</h1>
             {team.dsChiTietLoai?.map((detail, index) => {

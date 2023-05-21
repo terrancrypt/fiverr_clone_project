@@ -66,8 +66,8 @@ export default function CategoriesDetail() {
             </span>
           </div>
  
-          <div class="sort__by">
-            <span class="pre__title">Sort by</span>
+          <div className="sort__by">
+            <span className="pre__title">Sort by</span>
             <select>
               <option>Relevance</option>
               <option value="bestselling">Best Selling</option>
@@ -78,17 +78,17 @@ export default function CategoriesDetail() {
         <div className="categories_detail flex justify-start items-center space-x-4 ">
           {detail?.map((item, index) => {
             return (
-              <div className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full mb-4">
+              <div key={index} className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full mb-4">
                 <div className="detail__card bg-white shadow-md rounded-lg p-4 ">
                   <img
-                    class="w-full rounded-lg mb-4"
+                    className="w-full rounded-lg mb-4"
                     src={item.congViec.hinhAnh}
                     alt=""
                   />
 
                   <div className="card__body">
-                    <div class="seller__info flex items-center ">
-                      <div class="avatar">
+                    <div className="seller__info flex items-center ">
+                      <div className="avatar">
                         <img
                           width="24"
                           height="24"
@@ -97,7 +97,7 @@ export default function CategoriesDetail() {
                           alt=""
                         />
                       </div>
-                      <div class="name">
+                      <div className="name">
                         <h2>{item.tenNguoiTao}</h2>
                         <p>Level {item.congViec.saoCongViec} Seller</p>
                       </div>
@@ -121,10 +121,10 @@ export default function CategoriesDetail() {
                           ></path>
                         </svg>
                       </span>
-                      <span class="star__rate">
+                      <span className="star__rate">
                         {item.congViec.saoCongViec}
                       </span>
-                      <span class="rating">({item.congViec.danhGia})</span>
+                      <span className="rating">({item.congViec.danhGia})</span>
                     </div>
                     <div className="detail__footer flex justify-between items-center">
                       <div className="heart__icon">
@@ -137,7 +137,7 @@ export default function CategoriesDetail() {
                           <path d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z"></path>
                         </svg>
                       </div>
-                      <div class="price flex">
+                      <div className="price flex">
                         <p className="m-0">
                           Starting at <span>US${item.congViec.giaTien}</span>
                         </p>

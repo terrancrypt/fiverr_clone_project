@@ -1,4 +1,4 @@
-import { Radio, Tag } from "antd";
+import { Tag } from "antd";
 
 export const categories = [
   {

@@ -1,8 +1,7 @@
-.categories {
-    padding-top: 34px;
-    margin-top: 200px;
+.categories__topbar {
+    margin-bottom: 10px;
+    margin-top: 150px;
 }
-
 .categories__sort .sort__by span {
     font-size: 16px;
     padding: 0;

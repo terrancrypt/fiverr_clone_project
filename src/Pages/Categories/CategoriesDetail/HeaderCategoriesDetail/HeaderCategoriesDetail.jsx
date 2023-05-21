@@ -125,7 +125,7 @@ function HeaderCategoriesDetail() {
   return (
     <div className="flex justify-between items-center">
       {categoriesMenu?.map((categories, index) => {
-        return <Dropdown menu={categories.menu}>
+        return <Dropdown menu={categories.menu} key={index}>
             <Space >
               <button className="name flex space-x-2 justify-center items-center">
         <span>{categories.nameCate}</span>
