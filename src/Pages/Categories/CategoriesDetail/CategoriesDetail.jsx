@@ -75,10 +75,10 @@ export default function CategoriesDetail() {
             </select>
           </div>
         </div>
-        <div className="categories_detail flex justify-start items-center space-x-4 ">
+        <div className="categories_detail row ">
           {detail?.map((item, index) => {
             return (
-              <div key={index} className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full mb-4">
+              <div key={index} className="detail__img lg:w-1/4 md:w-1/3 sm:w-1/2 w-full mb-4">
                 <div className="detail__card bg-white shadow-md rounded-lg p-4 ">
                   <img
                     className="w-full rounded-lg mb-4"

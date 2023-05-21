@@ -9,7 +9,7 @@ export default function AdminUserPage() {
   const [users, setUsers] = useState([]);
   const [searchValue, setSearchValue] = useSearchParams();
   let stringSearch = window.location.search.substring(1);
-  console.log(qs.parse(stringSearch));
+
 
   let handleDelete = (id) => {
     adminUserService

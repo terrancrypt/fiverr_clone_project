@@ -5,7 +5,7 @@
     line-height: 1.2;
 }
 
-.categories__explore .container .explore__content .item h1 {
+.categories__explore .container .explore__content  h1 {
     color: #222325;
     font-size: 20px;
     font-weight: 600;
@@ -13,17 +13,9 @@
     margin: 20px 0;
 }
 
-.categories__explore .container  .item {
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 25%;
-}
-.categories__explore  .container  .item img {
-    border-radius: 10px;
-    max-height: 200px;
-    width: 100%;
-}
-.categories__explore  .container  .item p {
+
+
+.categories__explore  .container   p {
     color: #62646a;
     display: block;
     font-size: 18px;
@@ -31,7 +23,7 @@
     line-height: 1.2;
     margin-bottom: 0;
 }
-.categories__explore .container  .item .detail {
+.categories__explore .container .detail {
     border-radius: 7px;
     color: #62646a;
     display: block;
@@ -41,6 +33,6 @@
     padding-top: 10px;
     text-decoration: none;
 }
-.categories__explore .container  .item .detail:hover {
+.categories__explore .container   .detail:hover {
     background-color: #f5f5f5;
 }

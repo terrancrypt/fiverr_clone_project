@@ -1,5 +1,6 @@
-.name {
+.name__cate {
     background: none;
+    white-space: nowrap;
 
     border-radius: 4px;
     border: 1px solid #dadbdd;
@@ -10,8 +11,17 @@
     padding: 6px 12px;
     text-decoration: none;
 }
-.tick svg{
+
+.tick svg {
     width: 11px;
     height: 7px;
     color: red;
 }
+@media (min-width: 992px){
+.categories__dropdown{
+    flex: 0 0 auto;
+    width: 50%;
+}}
+
+
+

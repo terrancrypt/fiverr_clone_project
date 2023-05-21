@@ -6,7 +6,6 @@ import HeaderNav from "./HeaderComponents/MainHeader/HeaderNav";
 import HeaderSearch from "./HeaderComponents/MainHeader/HeaderSearch";
 import HeaderSideBar from "./HeaderComponents/HeaderSideBar/HeaderSideBar";
 import { handleShowSideBar } from "./HeaderComponents/HeaderSideBar/SideBarFunction";
-import { handleButtonLeft, handleButtonRight } from "./Functions/CategoriesButtonFunctions";
 import HeaderCategoriesButton from "./HeaderComponents/HeaderCategories/HeaderCategoriesButton";
 
 const HeaderTablet = () => {
