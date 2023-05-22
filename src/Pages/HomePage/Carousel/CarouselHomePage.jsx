@@ -1,16 +1,24 @@
-import React from "react";
-import './CarouselHomePage.css';
+import React, { useState } from "react";
+import "./CarouselHomePage.css";
+import { useNavigate } from "react-router-dom";
 
 const CarouselHomePage = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
+  const searchSubmit = (event) => {
+    event.preventDefault();
+    navigate(`/search/${searchValue}`);
+  };
+
   return (
     <div className="homepage__carousel flex items-center justify-start">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 py-52">
         <div className="homepage__carousel-content space-y-7">
           <h1>
             <span>Find the right</span>{" "}
-            <i className="domaine__font">freelance service</i>, right away 
+            <i className="domaine__font">freelance service</i>, right away
           </h1>
-          <form>
+          <form onSubmit={searchSubmit}>
             <label
               htmlFor="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only"
@@ -35,12 +43,14 @@ const CarouselHomePage = () => {
                   />
                 </svg>
               </div>
+
               <input
                 type="search"
                 id="default-search"
                 className="block w-full p-2.5 pl-10 border border-gray-300 rounded bg-gray-50 focus:ring-blue-500 focus:border-black"
                 placeholder="Try 'building moblie app'"
                 required
+                onChange={(event) => setSearchValue(event.target.value)}
               />
               <button
                 type="submit"
