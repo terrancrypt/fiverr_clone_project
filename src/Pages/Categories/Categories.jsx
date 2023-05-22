@@ -19,7 +19,8 @@ const Categories = () => {
   useEffect(() => {
     fetchExplore();
   }, [explore]);
-  return <div className="categories">
+
+  return <div className="categories container">
     <CategoriesBanner/>
     <CategoriesTitle/>
     <CategoriesExplore explore={explore}/>
