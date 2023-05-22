@@ -1,0 +1,38 @@
+.categories__explore .container h1 {
+    color: #404145;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.categories__explore .container .explore__content  h1 {
+    color: #222325;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+
+
+.categories__explore  .container   p {
+    color: #62646a;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.categories__explore .container .detail {
+    border-radius: 7px;
+    color: #62646a;
+    display: block;
+    margin-left: -10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.categories__explore .container   .detail:hover {
+    background-color: #f5f5f5;
+}

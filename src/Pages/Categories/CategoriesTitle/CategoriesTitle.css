@@ -1,0 +1,17 @@
+.categories__title .container h1 {
+    color: #404145;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.categories__title .container  .item {
+    border-radius: 10px;
+    box-shadow: 0 0.14px 2.29266px rgba(0,0,0,.032), 0 0.37px 4.42626px rgba(0,0,0,.048), 0 3px 7px rgba(0,0,0,.09);
+}
+.categories__title .container  .item img {
+    height: 100%;
+    margin-right: 9px;
+}
+
+
+

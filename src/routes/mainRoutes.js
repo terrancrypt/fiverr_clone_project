@@ -4,7 +4,10 @@ import HomePage from "../Pages/HomePage/HomePage";
 import JobsListPage from "../Pages/JobsListPage/JobsListPage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import RegisterPage from "../Pages/RegisterPage/RegisterPage";
-// import UserManagerpage from "../Pages/UserManagerPage/UserManagerpage";
+import UserManagerpage from "../Pages/UserManagerPage/UserManagerpage";
+import Categories from "../Pages/Categories/Categories";
+import CategoriesDetail from "../Pages/Categories/CategoriesDetail/CategoriesDetail";
+import SearchPage from "../Pages/SearchPage/SearchPage";
 
 export const mainRoutes = [
   {
@@ -20,6 +23,7 @@ export const mainRoutes = [
     component: <MainLayout Component={RegisterPage} />,
   },
   {
+
     url: "/jobs-list",
     component: <MainLayout Component={JobsListPage} />,
   },
@@ -30,5 +34,17 @@ export const mainRoutes = [
   {
     url: "/detail",
     component: <MainLayout Component={DetailPage} />,
+
+    url: "/title/:id",
+    component: <MainLayout Component={Categories} />,
+  },
+  {
+    url: "/categories/:id",
+    component: <MainLayout Component={CategoriesDetail} />,
+  },
+  {
+    url: "/search/:param",
+    component: <MainLayout Component={SearchPage} />,
+
   },
 ];

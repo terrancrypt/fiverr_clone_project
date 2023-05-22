@@ -10,7 +10,7 @@ export default function AdminCategoriesPage() {
       try {
         let result = await adminCategories.getAdminCategories();
         setAdminCategory(result.data.content);
-        console.log(result);
+    
       } catch (error) {}
     };
     fetchDetail();

@@ -55,7 +55,7 @@
   --font-size-medium: 16px;
   --font-size-medium-2: 20px;
   --font-size-medium-3: 24px;
-  --font-size-large: 32px;
+  --font-size-large: 28px;
   --font-size-super-large: 48px;
 }
 
@@ -88,6 +88,20 @@ textarea {
 .domaine__font {
   font-family: var(--domaine-font);
   font-weight: 500;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+h1 {
+  font-family: "MacanBold", Arial, Helvetica, sans-serif;
+  color: var(--text-white);
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h2 {
@@ -140,11 +154,17 @@ h6 {
 /*========= Tablet Devices ========= */
 @media only screen and (min-width: 600px) {
 
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   h2 {
+    font-size: 32px;
     line-height: 120%;
   }
-  
-  h5{
+
+  h5 {
     font-size: 20px;
   }
 
@@ -153,4 +173,30 @@ h6 {
     line-height: 130%;
   }
 
+}
+
+@media only screen and (min-width: 600px) {
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .btn-outline-light {
+    --bs-btn-color: #f8f9fa;
+    --bs-btn-border-color: #f8f9fa;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f8f9fa;
+    --bs-btn-hover-border-color: #f8f9fa;
+    --bs-btn-focus-shadow-rgb: 248, 249, 250;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #f8f9fa;
+    --bs-btn-active-border-color: #f8f9fa;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #f8f9fa;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #f8f9fa;
+    --bs-gradient: none;
+    --bs-btn-bg: transparent;
+  }
 }

@@ -1,10 +1,11 @@
-.call__to__action-content{
+.call__to__action-content {
     background-image: url('https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_2.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608129/bg-signup-1400-x2.png');
     background-size: cover;
     background-position: right;
+    padding: 120px 96px;
 }
 
-.call__to__action-button{
+.call__to__action-button {
     border: 1px solid transparent;
     border-radius: 4px;
     box-sizing: border-box;
@@ -17,6 +18,26 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    transition: 70ms cubic-bezier(.75,0,.25,1);
+    transition: 70ms cubic-bezier(.75, 0, .25, 1);
     background-color: var(--primary-color);
+}
+
+.call__to__action-button:hover{
+    background-color: #19a463;
+}
+
+/* ==== CallToAction Responsive */
+
+@media only screen and (max-width: 900px) {
+    .call__to__action-content {
+        background-color: #45091b;
+        background-image: none;
+        padding: 64px 32px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .call__to__action-content {
+        padding: 64px 32px;
+    }
 }

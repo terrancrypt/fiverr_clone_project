@@ -1,8 +1,6 @@
 import axios from "axios";
 import { BASE_URL, configHeaders } from "../config";
 
-
-
 export const userService={
     postLogin: (loginForm) => {
         return axios({
@@ -14,7 +12,7 @@ export const userService={
       },
       postRegister: (registerForm) => {
         return axios({
-          url: `${BASE_URL}/api/auth/signin`,
+          url: `${BASE_URL}/api/auth/signup`,
           method: "POST",
           data: registerForm,
           headers: configHeaders(),
