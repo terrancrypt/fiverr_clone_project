@@ -20,7 +20,6 @@ const Categories = () => {
   useEffect(() => {
     fetchExplore();
   }, [explore]);
-
   
   return <div className="categories container pb-[80px]">
     <CategoriesBanner/>
