@@ -5,13 +5,12 @@ import App from "./App";
 import "./assets/fonts/MacanPanWeb-Regular.ttf";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-
-import userLogin from "./toolkit/userLogin";
+import userSlice from "./toolkit/userSlice";
 import commentSlice from "./toolkit/commentSlice";
 
 const store = configureStore({
   reducer: {
-    userLogin,
+    userSlice,
     comments: commentSlice,
   },
 });

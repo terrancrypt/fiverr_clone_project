@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { jobsListService } from "../../services/jobslistServices/jobsListServ";
 import ItemJobList from "./ItemJobList";
 import DataJobsList from "./DataJobsList";
+import {jobsListService} from "../../services/jobsListServices/jobsListServ"
 
 export default function JobsListPage() {
   const [jobsList, setJobsList] = useState([]);

@@ -23,18 +23,18 @@ export const mainRoutes = [
     component: <MainLayout Component={RegisterPage} />,
   },
   {
-
     url: "/jobs-list",
     component: <MainLayout Component={JobsListPage} />,
   },
-  // {
-  //   url: "/manager",
-  //   component: <MainLayout Component={UserManagerpage} />,
-  // },
+  {
+    url: "/manager",
+    component: <MainLayout Component={UserManagerpage} />,
+  },
   {
     url: "/detail",
     component: <MainLayout Component={DetailPage} />,
-
+  },
+  {
     url: "/title/:id",
     component: <MainLayout Component={Categories} />,
   },
@@ -45,6 +45,5 @@ export const mainRoutes = [
   {
     url: "/search/:param",
     component: <MainLayout Component={SearchPage} />,
-
   },
 ];
