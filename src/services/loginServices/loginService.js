@@ -1,8 +1,6 @@
 import axios from "axios";
 import { BASE_URL, configHeaders } from "../config";
 
-
-
 export const userService={
     postLogin: (loginForm) => {
         return axios({

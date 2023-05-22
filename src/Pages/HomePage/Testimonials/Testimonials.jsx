@@ -23,7 +23,7 @@ const Testimonials = () => {
               return (
                 <div className="testimonials__item flex-col lg:flex-row" key={index}>
                   <TestimonialsModal item={item} />
-                  <div className="testimonials__item-text w-full lg:w-3/5 pt-6 lg:pt-0 pl-0 lg:pl-16 pr-0 lg:pr-12">
+                  <div className="testimonials__item-text w-full lg:w-3/5 pt-6 lg:pt-0 pl-4 lg:pl-16 pr-0 lg:pr-12">
                     <h5 className="flex flex-col lg:flex-row justify-start items-start pb-4 whitespace-nowrap lg:whitespace-pre-wrap">
                       {item.title}
                       <span className="lg:ml-3 lg:border-l">

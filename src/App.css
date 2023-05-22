@@ -90,6 +90,13 @@ textarea {
   font-weight: 500;
 }
 
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
 h1 {
   font-family: "MacanBold", Arial, Helvetica, sans-serif;
   color: var(--text-white);

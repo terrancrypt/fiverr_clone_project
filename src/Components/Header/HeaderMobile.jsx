@@ -3,10 +3,16 @@ import "./Header.css";
 import HeaderSideBar from "./HeaderComponents/HeaderSideBar/HeaderSideBar";
 import { handleShowSideBar } from "./HeaderComponents/HeaderSideBar/SideBarFunction";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Avatar, Badge, Space } from "antd";
+import { UserOutlined} from "@ant-design/icons";
 
 const HeaderMobile = () => {
+  const userInfo = useSelector((state) => state.userSlice.userInfo);
+
+
   return (
-    <header className="header fixed w-full z-50">
+    <header className="fixed w-full z-50">
       <div className="header__main">
         <div className="header__main-border">
           <div className="header__main-wrapper flex justify-between items-center container my-0 mx-auto px-6 sm:px-8 2xl:px-0">
@@ -45,7 +51,18 @@ const HeaderMobile = () => {
                 </g>
               </svg>
             </NavLink>
-            <NavLink className="text-base font-extrabold" to='/login'>Join</NavLink>
+            {userInfo ? (<NavLink>
+                  <Space size={24}>
+                    <Badge color="green" dot>
+                      <Avatar
+                        className="flex items-center justify-center"
+                        shape="circle"
+                        icon={userInfo.user.avatar || <UserOutlined />}
+                      />
+                    </Badge>
+                  </Space>
+                </NavLink>) : (<NavLink className="text-base font-extrabold" to='/login'>Join</NavLink>)}
+            
           </div>
         </div>
       </div>

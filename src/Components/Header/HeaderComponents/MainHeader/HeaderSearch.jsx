@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeaderSearch = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
+  const searchSubmit = (event) => {
+    event.preventDefault();
+    navigate(`/search/${searchValue}`);
+  };
+
   return (
-    <div className="header__search relative flex-grow">
+    <form className="header__search relative flex-grow" onSubmit={searchSubmit}>
       <input
         type="search"
         id="search-dropdown"
         className="block w-full z-20 border rounded"
         placeholder="What service are you looking for today?"
         required
+        onChange={(event) => setSearchValue(event.target.value)}
       />
-      <button type="submit" className="absolute top-0 right-0 px-4 py-3">
+      <button type="submit" className="absolute top-0 right-0 px-4 py-[12px]">
         <svg
           aria-hidden="true"
           className="w-4 h-4"
@@ -28,7 +37,7 @@ const HeaderSearch = () => {
         </svg>
         <span className="sr-only">Search</span>
       </button>
-    </div>
+    </form>
   );
 };
 

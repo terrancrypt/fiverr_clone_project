@@ -1,0 +1,49 @@
+.name__cate {
+    background: none;
+    white-space: nowrap;
+
+    border-radius: 4px;
+    border: 1px solid #dadbdd;
+    color: #222325;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 0 6px 0 0;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.tick svg {
+    width: 11px;
+    height: 7px;
+    color: red;
+}
+@media (min-width: 992px){
+.categories__dropdown{
+    flex: 0 0 auto;
+    width: 50%;
+}}
+
+.toggle button.ant-switch, .toggle button.ant-switch:hover{
+    background-color: #dadbdd;
+}
+
+.toggle button:focus{
+    outline: none;
+}
+
+.toggle .ant-switch .ant-switch-handle::before{
+    height: 14px;
+    width: 14px;
+}
+
+.toggle .ant-switch.ant-switch-checked .ant-switch-handle {
+    inset-inline-start: calc(100% - 16px);
+}
+
+.toggle .ant-switch.ant-switch-checked, .toggle .ant-switch.ant-switch-checked:hover {
+    background: var(--primary-color);
+}
+
+
+
+

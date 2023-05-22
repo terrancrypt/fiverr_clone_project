@@ -7,6 +7,7 @@ import { categoriesServices } from "../../services/categoriesServices";
 
 
 const Categories = () => {
+
   let { id } = useParams();
   const [explore, setExplore] = useState([]);
   let fetchExplore = async () => {
@@ -19,8 +20,8 @@ const Categories = () => {
   useEffect(() => {
     fetchExplore();
   }, [explore]);
-
-  return <div className="categories container">
+  
+  return <div className="categories container pb-[80px]">
     <CategoriesBanner/>
     <CategoriesTitle/>
     <CategoriesExplore explore={explore}/>

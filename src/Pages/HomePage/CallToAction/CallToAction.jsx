@@ -4,7 +4,7 @@ import './CallToAction.css';
 
 const CallToAction = () => {
   return (
-    <div className="call__to__action">
+    <div className="call__to__action pb-[100px]">
       <div className="container my-0 mx-auto px-6 sm:px-8 2xl:px-0 mb-24">
         <div className="call__to__action-content w-full h-full rounded">
           <div className="z-10">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./loginPage.css";
 import { useDispatch } from "react-redux";
 import { userService } from "../../services/loginServices/loginService";
@@ -19,23 +19,20 @@ const LoginPage = () => {
         message.success("Login thành công");
         localUserService.set(res.data.content);
         dispatch(setUserLogin(res.data.content));
-        console.log(res);
         navigate("/");
       })
       .catch((err) => {
-        console.log(err);
         message.error("Login thất bại");
       });
   };
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
-    
   };
 
 
   return (
     <>
-      <section className="bg-gray-50 dark:bg-gray-900 mt-32">
+      <section className="bg-gray-50 dark:bg-gray-900 pt-[100px]">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className=" p-6 space-y-4 md:space-y-6 sm:p-8">
