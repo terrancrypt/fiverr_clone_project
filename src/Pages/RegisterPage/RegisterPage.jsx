@@ -45,8 +45,6 @@ const RegisterPage = () => {
   };
 
   const registerUser = (values) => {
-    console.log(values);
-
     userService
       .postRegister(values)
       .then((res) => {
@@ -185,10 +183,14 @@ const RegisterPage = () => {
                 >
                   <Input type="date" className="register__input" />
                 </Form.Item>
-                <Form.Item>
-                  <Radio.Group onChange={onChange} value={gender}>
-                    <Radio value={false}>Nam</Radio>
-                    <Radio value={true}>Nữ</Radio>
+                <Form.Item
+                  name="gender"
+                  label="Gender"
+                  rules={[{ required: true, message: "Please pick an item!" }]}
+                >
+                  <Radio.Group>
+                    <Radio value="true">Name</Radio>
+                    <Radio value="false">Nũ</Radio>
                   </Radio.Group>
                 </Form.Item>
 

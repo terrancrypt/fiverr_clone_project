@@ -3,7 +3,7 @@ export const headerjob=[
         title: "Tên công việc",
         dataIndex: "tenCongViec",
         key: "tenCongViec",
-        render:(tenCongViec)=>{return <p className="w-25 ">{tenCongViec}</p>}
+        render:(tenCongViec)=>{return <p>{tenCongViec}</p>}
       },  
 
       {
@@ -25,19 +25,19 @@ export const headerjob=[
         title: "Hình ảnh",
         dataIndex: "hinhAnh" ,
         key: "hinhAnh",
-        render: (hinhAnh) => <img className="w-50" src={hinhAnh} />
+        render: (hinhAnh) => <img className="w-100" src={hinhAnh} />
       },  
       {
         title: "Mô tả",
         dataIndex: "moTa",
         key: "moTa",
-        render:(moTa)=>{return <p className="w-60 ">{moTa}</p>}
+        render:(moTa)=>{return <p className="w-60" >{moTa}</p>}
       }, 
       {
         title: "Mô tả ngắn",
         dataIndex: "moTaNgan",
         key: "moTaNgan",
-        render:(moTaNgan)=>{return <p className="w-60 ">{moTaNgan}</p>}
+        render:(moTaNgan)=>{return <p >{moTaNgan}</p>}
       }, 
       {
         title: "Mã chi tiết loại công việc",
@@ -49,11 +49,6 @@ export const headerjob=[
         dataIndex: "saoCongViec",
         key: "saoCongViec",
       },
-      {
-        title: "Thao tác",
-        dataIndex: "action",
-        key: "action",
-       
-      },
+     
 
 ]
