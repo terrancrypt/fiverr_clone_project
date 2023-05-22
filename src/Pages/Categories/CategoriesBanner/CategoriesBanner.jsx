@@ -28,7 +28,7 @@ const CategoriesBanner = () => {
               />
             </svg>
             </div>
-            <span>How Fiverr Works</span>
+            <span className="text-white">How Fiverr Works</span>
           </button>
           </div>
         </div>

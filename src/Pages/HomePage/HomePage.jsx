@@ -15,6 +15,12 @@ const HomePage = () => {
   useEffect(() => {
     const header = document.querySelector(".header");
     const headerLogo = document.querySelector("#fillLogo");
+    header?.classList.add(
+      "turn__off",
+      "turn__off-search",
+      "turn__off-categories"
+    );
+    headerLogo?.setAttribute("fill", "#fff");
     const handleScroll = () => {
       if (window.location.pathname === "/") {
         if (window.scrollY >= 100) {
