@@ -6,11 +6,12 @@ import { adminService } from "../../../services/adminServices/adminsService";
 
 export default function AdminServicesPage() {
   const [adminServ, setAdminServ] = useState([]);
+
   useEffect(() => {
     let fetchServices = async () => {
       try {
         let result = await adminService.getAdminService();
-        setAdminServ(result.data.content);
+        setAdminServ(result);
       } catch (error) {}
     };
     fetchServices();

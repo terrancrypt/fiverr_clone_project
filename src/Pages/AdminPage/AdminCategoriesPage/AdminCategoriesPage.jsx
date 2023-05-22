@@ -67,7 +67,7 @@ export default function AdminCategoriesPage() {
   };
   useEffect(() => {
     fetCategory();
-  });
+  }, []);
   return (
     <div>
       <Table columns={categories} dataSource={adminCategory} />
