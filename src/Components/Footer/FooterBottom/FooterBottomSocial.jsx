@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterBottomSocial = () => {
   return (
-    <ul className="flex items-center justify-between sm:pr-4 mb-4 sm:mb-0">
+    <ul className="flex items-center justify-between sm:pr-4">
       <li className="mr-3">
         <NavLink className="bottom__right-social">
           <svg

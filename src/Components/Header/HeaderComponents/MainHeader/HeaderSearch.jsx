@@ -10,7 +10,7 @@ const HeaderSearch = () => {
         placeholder="What service are you looking for today?"
         required
       />
-      <button type="submit" className="absolute top-0 right-0 px-4 py-3">
+      <button type="submit" className="absolute top-0 right-0 px-4 py-[12px]">
         <svg
           aria-hidden="true"
           className="w-4 h-4"

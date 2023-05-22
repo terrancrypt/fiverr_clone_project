@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterBottomGeneral = () => {
   return (
-    <div className="bottom__general flex text-gray-500 text-sm font-bold -ml-2">
+    <div className="bottom__general flex text-gray-500 text-sm font-bold -ml-2 mt-2 sm:mt-0">
       <NavLink className="bottom__general-language flex items-center justify-center py-2 px-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"

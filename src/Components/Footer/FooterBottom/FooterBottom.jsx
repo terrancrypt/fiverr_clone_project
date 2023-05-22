@@ -4,7 +4,7 @@ import FooterBottomGeneral from "./FooterBottomGeneral";
 
 const FooterBottom = () => {
   return (
-    <div className="bottom mt-4 flex flex-col justify-between items-center sm:items-start">
+    <div className="bottom mt-4 flex flex-col justify-between items-center">
       <div className="bottom__left mb-3 sm:mb-6 flex flex-col sm:flex-row items-center sm:items-end">
         <svg
           width="77"

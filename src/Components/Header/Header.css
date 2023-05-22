@@ -44,7 +44,7 @@
     background-color: var(--text-secondary-color);
 }
 
-.header__nav ul {
+.header__nav ul{
     margin: 0!important;
 }
 
@@ -56,8 +56,12 @@
     transition: all .2s ease;
 }
 
-.header__nav ul li:hover {
-    color: var(--primary-color);
+.header__nav ul li a{
+    text-decoration: none;
+}
+
+.header__nav ul li:hover a{
+    color: var(--primary-color)!important;
 }
 
 .header__nav .fiverr__business {
@@ -74,6 +78,7 @@
     color: var(--primary-color);
     transition: all .2s ease;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .header__nav .header__button:hover {
@@ -109,6 +114,7 @@
     font-family: var(--regular-font);
     font-size: var(--font-size-medium);
     color: var(--text-bland-color);
+    text-decoration: none;
 }
 
 .header__categories ul li a.header__categories-item:after {
@@ -152,10 +158,12 @@
 .header__categories .header__dropdown a {
     font-size: var(--font-size-medium);
     transition: all 0.15s;
+
 }
 
 .header__categories .header__dropdown a:hover {
     color: var(--text-bland-color);
+    text-decoration: underline;
 }
 
 .header__categories .categories__button-right {
