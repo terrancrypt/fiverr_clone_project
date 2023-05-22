@@ -1,5 +1,7 @@
 # Dự án Fiverr Clone
 
+Sơ đồ dự án: https://xmind.works/share/sSBbK1wA
+
 ## Phân chia công việc
 ### Tường
 - Phân chia công việc, setup source code
