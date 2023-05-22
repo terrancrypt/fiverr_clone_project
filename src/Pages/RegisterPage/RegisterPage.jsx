@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { userService } from "../../services/loginServices/loginService";
 import { Button, Form, Input, Radio, message } from "antd";
@@ -37,6 +37,13 @@ const tailFormItemLayout = {
 const RegisterPage = () => {
   let navigate = useNavigate();
   const [form] = Form.useForm();
+  const [gender, setGender] = useState(true);
+
+  const onChange = (e) => {
+    console.log("radio checked", e.target.value);
+    setGender(e.target.value);
+  };
+
   const registerUser = (values) => {
     userService
       .postRegister(values)

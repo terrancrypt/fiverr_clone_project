@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const HeaderNav = () => {
   return (
@@ -34,11 +35,16 @@ const HeaderNav = () => {
           <a href="#">Become a Seller</a>
         </li>
         <li>
-          <a href="#">Sign In</a>
+          <NavLink to="/login" href="#">
+            Sign In
+          </NavLink>
         </li>
-        <a href="#" className="header__button py-1.5 px-4 rounded border">
+        <NavLink
+          to="/register"
+          className="header__button py-1.5 px-4 rounded border"
+        >
           Join
-        </a>
+        </NavLink>
       </ul>
     </div>
   );
