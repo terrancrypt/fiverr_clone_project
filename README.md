@@ -10,15 +10,15 @@
 Tiến độ: 100%
 
 ### Thanh
-- Pages: AdminUserPage, AdminJobsPage, CategoriesPage (Trang danh sách công việc), JobsListPage (Trang danh sách công việc và loại công việc), LoginPage và RegisterPage
+- Pages: AdminUserPage, AdminJobsPage, CategoriesPage (Trang danh sách công việc), CategoriesDetailPage (Trang danh sách công việc theo loại công việc), LoginPage và RegisterPage
 - adminLayout
 
 Tiến độ: 100%
 
 ### Tân
-- Pages: AdminServicePage, AdminCategoryPage, DetailJobs, UserManagerPage
+- Pages: AdminServicePage, AdminCategoryPage, DetailJobs, UserManagerPage, JobsListPage (Trang danh sách toàn bộ loại công việc)
 
-Tiến độ: 50% (Thiếu DetailJobs, UserManagerPage)
+Tiến độ: 30% (Thiếu DetailJobs, UserManagerPage, JobsListPage)
 
 ## Thư viện sử dụng
 - redux toolkit
