@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./loginPage.css";
 import { useDispatch } from "react-redux";
 import { userService } from "../../services/loginServices/loginService";
@@ -19,17 +19,14 @@ const LoginPage = () => {
         message.success("Login thành công");
         localUserService.set(res.data.content);
         dispatch(setUserLogin(res.data.content));
-        console.log(res);
         navigate("/");
       })
       .catch((err) => {
-        console.log(err);
         message.error("Login thất bại");
       });
   };
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
-    
   };
 
 

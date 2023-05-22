@@ -90,9 +90,11 @@ textarea {
   font-weight: 500;
 }
 
-ol, ul, dl {
+ol,
+ul,
+dl {
   margin-top: 0;
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 h1 {
