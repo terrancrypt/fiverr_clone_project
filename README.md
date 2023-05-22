@@ -3,7 +3,7 @@
 ## Phân chia công việc
 ### Tường
 - Phân chia công việc, setup source code
-- Pages: Homepage, SearchPage
+- Pages: HomePage, SearchPage
 - Component: Header, Footer
 - mainLayout, responsiveLayout
 
