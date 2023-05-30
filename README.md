@@ -2,6 +2,8 @@
 
 Sơ đồ dự án: https://xmind.works/share/sSBbK1wA
 
+Đặc tả công việc: https://freezing-cotton-b53.notion.site/D-n-Fiverr-Clone-612ef543e5fc44b488f480e475bad5c7
+
 ## Phân chia công việc
 ### Tường
 - Phân chia công việc, setup source code
